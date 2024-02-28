@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+  scroll-behavior: smooth !important;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --success: 120 70% 50%;
+    --success-foreground: 210 40% 98%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1 {
+    @apply scroll-m-20 text-3xl sm:text-4xl font-extrabold tracking-tight lg:text-5xl
+  }
+
+  h2 {
+    @apply scroll-m-20 pb-2 text-3xl md:text-[48px] font-semibold leading-[125%] first:mt-0
+  }
+
+  h3 {
+    @apply scroll-m-20 text-[20px] font-semibold tracking-tight
+  }
+
+  h4 {
+    @apply scroll-m-20 text-xl font-semibold tracking-tight
+  }
+
+  p {
+    @apply leading-6 font-normal text-[15px]
+  }
+
+  ul {
+    @apply my-6 ml-6 list-disc [&>li]:mt-2
+  }
+
+  small {
+    @apply text-sm font-medium leading-none
+  }
+}
+
+.profile_picture{
+/* mix-blend-mode: screen; */
+/* position: absolute; */
+/* height: 100vh; */
+/* width: 100vh; */
+/* background-image: url("/public/profile_picture.png"); */
+/* background-position: center; */
+/* background-size: cover; */
+border-radius: 31% 69% 63% 37%  ;
+}
+@layer components {
+  .height-full {
+    min-height: calc(100vh - 4.5rem);
+    padding-top: 5rem;
+  }
+  .height-max {
+   height: calc(100vh - 5rem);
+  }
+
+  .grid-column-4 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-8 gap-6
+  }
+
+  .grid-column-3 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-6
+  }
+
+  .grid-column-2 {
+    @apply grid grid-cols-1 lg:grid-cols-2 lg:gap-8 gap-6
+  }
+
+  .portfolio-background {
+    border-radius: 21px;
+    background: linear-gradient(179deg, #424599 1.09%, #393B70 100.54%);
+  }
+
+  .waitlist-background{
+    border-radius: 22px;
+    background: linear-gradient(179deg, #424599 1.09%, #393B70 100.54%);
+  }
+  
+  .footer-background{
+    background: linear-gradient( to bottom , #1D484E 0% , #1D484E 50%, black 50% , black 100%);
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    background-color: white !important;
+  }
+
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    @apply absolute top-8
+  }
+
+  .accordian-svg svg{
+    height:24px;
+    width:24px
+  }
+
+  .eye-icons{
+    @apply absolute right-5 text-liquidox-avatar top-4 text-[18px] hover:cursor-pointer
+  }
+
+
+  
+
+}
