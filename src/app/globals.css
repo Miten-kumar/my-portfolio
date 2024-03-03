@@ -6,8 +6,11 @@ html,
 body,
 :root {
   height: 100%;
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth !important;
 }
+
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -117,23 +120,25 @@ body,
   }
 }
 
-.profile_picture{
-/* mix-blend-mode: screen; */
-/* position: absolute; */
-/* height: 100vh; */
-/* width: 100vh; */
-/* background-image: url("/public/profile_picture.png"); */
-/* background-position: center; */
-/* background-size: cover; */
-border-radius: 31% 69% 63% 37%  ;
+.profile_picture {
+  /* mix-blend-mode: screen; */
+  /* position: absolute; */
+  /* height: 100vh; */
+  /* width: 100vh; */
+  /* background-image: url("/public/profile_picture.png"); */
+  /* background-position: center; */
+  /* background-size: cover; */
+  border-radius: 31% 69% 63% 37%;
 }
+
 @layer components {
   .height-full {
     min-height: calc(100vh - 4.5rem);
     padding-top: 5rem;
   }
+
   .height-max {
-   height: calc(100vh - 5rem);
+    height: calc(100vh - 5rem);
   }
 
   .grid-column-4 {
@@ -153,13 +158,13 @@ border-radius: 31% 69% 63% 37%  ;
     background: linear-gradient(179deg, #424599 1.09%, #393B70 100.54%);
   }
 
-  .waitlist-background{
+  .waitlist-background {
     border-radius: 22px;
     background: linear-gradient(179deg, #424599 1.09%, #393B70 100.54%);
   }
-  
-  .footer-background{
-    background: linear-gradient( to bottom , #1D484E 0% , #1D484E 50%, black 50% , black 100%);
+
+  .footer-background {
+    background: linear-gradient(to bottom, #1D484E 0%, #1D484E 50%, black 50%, black 100%);
   }
 
   .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
@@ -174,16 +179,15 @@ border-radius: 31% 69% 63% 37%  ;
     @apply absolute top-8
   }
 
-  .accordian-svg svg{
-    height:24px;
-    width:24px
+  .accordian-svg svg {
+    height: 24px;
+    width: 24px
   }
 
-  .eye-icons{
+  .eye-icons {
     @apply absolute right-5 text-liquidox-avatar top-4 text-[18px] hover:cursor-pointer
   }
 
 
-  
 
 }
