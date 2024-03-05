@@ -188,6 +188,20 @@ body,
     @apply absolute right-5 text-liquidox-avatar top-4 text-[18px] hover:cursor-pointer
   }
 
-
+  .rotate-image{
+    width:80px;
+    height:80px;
+    animation: rotation infinite 10s linear;
+ }
+ 
+ @keyframes rotation{
+   from{
+     transform:rotate(0deg);
+   }
+   
+   to{
+     transform:rotate(360deg);
+   }
+ }
 
 }

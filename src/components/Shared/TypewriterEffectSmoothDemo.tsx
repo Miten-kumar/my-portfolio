@@ -33,8 +33,7 @@ export function TypewriterEffectSmoothDemo() {
         </button>
       </div> */}
       <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base mb-5">
-        I Am Into <span className="text-orange-600">
-          MERN Stack </span> Developer
+        I Am Into <span className="text-orange-600">  MERN Stack </span> Developer
       </p>
       <AnimatedTooltipPreview />
     </div>

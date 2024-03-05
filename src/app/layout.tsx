@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { BackgroundBoxesDemo } from "@/components/Shared/BackgroundBoxesDemo";
 import { GridSmallBackgroundDemo } from "@/components/Shared/DotBackgroundDemo";
+import { ThemeProvider } from "@/components/provider/theme-provider";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,10 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <body className={inter.className}>
-        <GridSmallBackgroundDemo />
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+          <GridSmallBackgroundDemo />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
