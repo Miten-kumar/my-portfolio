@@ -1,36 +1,13 @@
-// import React from "react";
-// import { TypewriterEffectSmoothDemo } from "./TypewriterEffectSmoothDemo";
-// import { ThreeDCardDemo } from "./ThreeDCardDemo";
-
-import { ThreeDCardDemo } from "./ThreeDCardDemo";
-import { TypewriterEffectSmoothDemo } from "./TypewriterEffectSmoothDemo";
-
-// export function DotBackgroundDemo() {
-//   return (
-//     <div className="h-screen w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
-//       {/* Radial gradient for the container to give a faded look */}
-//       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]">
-//       </div>
-//       <div className="md:w-full grid md:grid-cols-3 grid-cols-1 justify-center it gap-3">
-//         <div className="md:col-span-2 col-span-1 flex justify-center items-center">
-//           <TypewriterEffectSmoothDemo />
-//         </div>
-//         <div>
-//           <ThreeDCardDemo />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-
-// import React from "react";
+import React from "react";
+import background from "../../../public/93826.jpg"
+import Image from "next/image";
 
 export function GridSmallBackgroundDemo() {
   return (
-    <div className="md:max-w-[1460px] w-full dark:bg-black bg-white  dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] flex items-center justify-center absolute">
-      {/* Radial gradient for the container to give a faded look */}
-      <div className="absolute h-screen pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-    </div>
+<div className="h-[600px] w-full  dark:bg-black absolute">
+  <Image src={background}  className="absolute element h-[600px]  overflow-hidden top-0 -z-10 object-cover" alt="no-background"
+  />
+</div>
+
   );
 }
