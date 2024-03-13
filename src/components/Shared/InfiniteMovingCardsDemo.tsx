@@ -22,9 +22,6 @@ export function InfiniteMovingCardsDemo() {
 
 const testimonials = [
     {
-        quote: "My Skills and Expertise",
-    },
-    {
         image: html,
         class:"invert"
     },

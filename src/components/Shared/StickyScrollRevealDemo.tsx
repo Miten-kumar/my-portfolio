@@ -45,19 +45,15 @@ const content = [
         title: "Css (UI) Frameworks",
         description: "UI frameworks like Shadcn UI, Tailwind CSS, Material UI, and Acertitude UI accelerate web development.  Each offers pre-built components or utility classes for styling and functionality.  This saves time and ensures consistency, allowing developers to focus on the unique features of their web application.", content: (
             <div className="h-full w-full  flex flex-row  items-center justify-around">
+                <Image src={shadcn}  alt="no-image" className="animate-bounce delay-1000" width={80}/>
                 <Image src={material}  alt="no-image" className="animate-bounce delay-500" width={80} />
-                <Image src={shadcn}  alt="no-image" className="animate-bounce delay-1000" width={130}/>
                 <Image src={taiwind}  alt="no-image" className="animate-bounce delay-75" width={80} />
             </div>
         ),
     },
     {
         title: "Helpful AI Tools",
-        description: "When searching for the best solutions or optimizing code, I turn to ChatGPT, Phind AI, and sometimes Gemini AI. These tools serve as versatile converters, helping me navigate through complex tasks and adhere to best practices effortlessly, ensuring optimal outcomes.", content: (
-            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-                Running out of content
-            </div>
-        ),
+        description: "When searching for the best solutions or optimizing code, I turn to ChatGPT, Phind AI, and sometimes Gemini AI. These tools serve as versatile converters, helping me navigate through complex tasks and adhere to best practices effortlessly, ensuring optimal outcomes.",
     },
 ];
 export function StickyScrollRevealDemo() {

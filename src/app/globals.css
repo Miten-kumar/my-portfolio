@@ -188,77 +188,161 @@ body,
     @apply absolute right-5 text-liquidox-avatar top-4 text-[18px] hover:cursor-pointer
   }
 
-  .rotate-image{
-    width:80px;
-    height:80px;
+  .rotate-image {
+    width: 80px;
+    height: 80px;
     animation: rotation infinite 10s linear;
- }
- 
- @keyframes rotation{
-   from{
-     transform:rotate(0deg);
-   }
-   
-   to{
-     transform:rotate(360deg);
-   }
- }
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 
- .half-circle {
-  width: 200px;
-  height: 100px; /* as the half of the width */
-  background-color: gold;
-  border-top-left-radius: 110px; /* 100px of height + 10px of border */
-  border-top-right-radius: 110px; /* 100px of height + 10px of border */
-  border: 10px solid gray;
-  border-bottom: 0;
- }
- .ocean {
-  height: 5%;
+  .half-circle {
+    width: 200px;
+    height: 100px;
+    /* as the half of the width */
+    background-color: gold;
+    border-top-left-radius: 110px;
+    /* 100px of height + 10px of border */
+    border-top-right-radius: 110px;
+    /* 100px of height + 10px of border */
+    border: 10px solid gray;
+    border-bottom: 0;
+  }
+
+  .ocean {
+    height: 5%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #015871;
+  }
+
+  .wave {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+    position: absolute;
+    width: 6400px;
+    top: -198px;
+    left: 0;
+    height: 198px;
+    transform: translate(0, 0, 0);
+    animation: wave 7s ease infinite;
+  }
+
+  .wave:nth-of-type(2) {
+    top: -168px;
+    animation: swell 4s ease infinite;
+    opacity: 1;
+  }
+
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+
+    100% {
+      margin-left: -1600px;
+    }
+  }
+
+  @keyframes swell {
+
+    0%,
+    100% {
+      transform: translate(0, -30px);
+    }
+
+    50% {
+      transform: translate(0, 5px);
+    }
+  }
+
+
+  @media only screen and (max-width: 440px) {
+
+    .element {
+      border-radius: 0 0 200px 200px;
+
+    }
+  }
+}
+
+.hr-text {
+  border: 0;
+  line-height: 0.5;
+  position: relative;
+  letter-spacing: 6px;
+  text-align: center;
+  height: 1.5em;
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* margin: 30px 15px; */
+}
+
+.hr-text::before {
+  content: "";
+  background: linear-gradient(to right, transparent, white, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
   width: 100%;
+  height: 1px;
+}
+
+.hr-text::after {
+  content: attr(data-content);
+  position: relative;
+  padding: 0 7px;
+  line-height: 1.5em;
+  color: white;
+  background-color: var(--slate-900);
+}
+
+/* 
+ @import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+aside:before, aside:after {
+  height: 0;
+  width: 0;
+  content: "";
   position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #015871;
+  border-style: solid;
+  border-width: 0;
 }
 
-.wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
-  position: absolute;
-  width: 6400px;
-  top: -198px;
-  left: 0;
-  height: 198px;
-  transform: translate(0, 0, 0);
-  animation: wave 7s ease infinite;
+body {
+  font-family: "Yusei Magic", sans-serif;
+  background-color: black;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
 }
 
-.wave:nth-of-type(2) {
-  top: -168px;
-  animation: swell 4s ease infinite;
-  opacity: 1;
+#container {
+  width: 160px;
 }
 
-@keyframes wave {
-  0% { margin-left: 0; }
-  100% { margin-left: -1600px;}
+aside {
+  line-height: 33px;
+  position: relative;
 }
-@keyframes swell {
-  0%, 100% {
-    transform: translate(0, -30px);
-  }
-  50% {
-    transform: translate(0, 5px);
-  }
+aside.ribbon2 {
+  background-image: linear-gradient(to top, #29AB87 0%, #29AB87 100%);}
+aside.ribbon2:before {
+  border-color: #00A86B #00A86B #00A86B transparent;
+  left: -34px;
+  border-width: 20px;
 }
- 
-
-@media only screen and (max-width: 440px) {
-
-  .element {
-    border-radius: 0 0 200px 200px;
-    
-   }
-}
-}
+aside.ribbon2:after {
+  border-color: #00A86B transparent #00A86B #00A86B;
+  right: -34px;
+  border-width: 20px;
+} */

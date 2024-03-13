@@ -59,7 +59,7 @@ export const StickyScroll = ({
             <motion.div >
 
                 <motion.div animate={{ backgroundColor: backgroundColors[activeCard % backgroundColors.length], }} className="h-[30rem] overflow-y-auto grid grid-cols-4 grid-rows-[auto_repeat(3,1fr)] gap-4 relative space-x-10 rounded-3xl max-w-[1460px] mx-auto" ref={ref}>
-                    <div className="col-span-4 my-5 ">
+                    <div className="col-span-4 my-5 absolte">
                         <InfiniteMovingCardsDemo />
                     </div>
                     <div className="col-span-2">
