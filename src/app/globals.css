@@ -188,6 +188,77 @@ body,
     @apply absolute right-5 text-liquidox-avatar top-4 text-[18px] hover:cursor-pointer
   }
 
+  .rotate-image{
+    width:80px;
+    height:80px;
+    animation: rotation infinite 10s linear;
+ }
+ 
+ @keyframes rotation{
+   from{
+     transform:rotate(0deg);
+   }
+   
+   to{
+     transform:rotate(360deg);
+   }
+ }
 
 
+ .half-circle {
+  width: 200px;
+  height: 100px; /* as the half of the width */
+  background-color: gold;
+  border-top-left-radius: 110px; /* 100px of height + 10px of border */
+  border-top-right-radius: 110px; /* 100px of height + 10px of border */
+  border: 10px solid gray;
+  border-bottom: 0;
+ }
+ .ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  width: 6400px;
+  top: -198px;
+  left: 0;
+  height: 198px;
+  transform: translate(0, 0, 0);
+  animation: wave 7s ease infinite;
+}
+
+.wave:nth-of-type(2) {
+  top: -168px;
+  animation: swell 4s ease infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% { margin-left: 0; }
+  100% { margin-left: -1600px;}
+}
+@keyframes swell {
+  0%, 100% {
+    transform: translate(0, -30px);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+}
+ 
+
+@media only screen and (max-width: 440px) {
+
+  .element {
+    border-radius: 0 0 200px 200px;
+    
+   }
+}
 }

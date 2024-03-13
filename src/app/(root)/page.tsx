@@ -1,12 +1,14 @@
 
 // import { BackgroundBoxesDemo } from "@/components/Shared/BackgroundBoxesDemo"
-import { ThreeDCardDemo } from "@/components/Shared/ThreeDCardDemo"
-import { TypewriterEffectSmoothDemo } from "@/components/Shared/TypewriterEffectSmoothDemo"
+
+import Herosection from "./_homepage-components/HeroSection";
+import { SkillSection } from "./_homepage-components/SkillSection";
+
 export default function Home() {
   return (
     <>
-    {/* < BackgroundBoxesDemo /> */}
-          {/* <TypewriterEffectSmoothDemo /> */}
+    <Herosection/>
+    <SkillSection/>
     </>
   )
 }
