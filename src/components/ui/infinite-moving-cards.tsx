@@ -71,22 +71,20 @@ export const InfiniteMovingCards = ({
         }
     };
     return (
-        <div ref={containerRef} className={cn("scroller relative my-auto  w-full overflow-hidden", className)} >
-            {/* <div id='container' className="mx-auto mb-5 text-[#596164]">
-                <aside className='ribbon2 text-white'> MY SKILL</aside>
-            </div> */}
+        <div ref={containerRef} className={cn("scroller relative my-auto   w-full overflow-hidden", className)} >
+
+            {/* <hr className="hr-text gradient mt-1" data-content="MY SKILL" /> */}
             <data ref={scrollerRef} className={cn(" flex  min-w-full shrink-0 no-quotes w-max flex-nowrap ", start && "animate-scroll ", pauseOnHover && "hover:[animation-play-state:paused]")}>
                 {items.map((item, idx) => (
                     <div className="w-96 relative flex-shrink-0" key={idx} >
                         <div aria-hidden="true" className="user-select-none -z-1 pointer-events-none absolute -left-0.5  h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"></div>
-                        <span className=" relative z-20  text-xs  text-slate-100">
+                        <span className=" relative z-20  text-xs  text-slate-100 ">
                             {item.quote}
                         </span>
                         {item?.image ? <Image height={50} width={50} src={item.image} alt="no-icon" className={`object-cover h-10 w-10 !m-0 !p-0 object-top rounded-full group-hover:scale-105 group-hover:z-30   relative ${item?.class ? item?.class : ""}`} /> : ""}
                     </div>
                 ))}
             </data>
-                <hr className="hr-text gradient mt-1" data-content="MY SKILL"/>
         </div>
     );
 };

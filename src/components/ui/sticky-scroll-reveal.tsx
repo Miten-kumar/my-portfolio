@@ -4,6 +4,7 @@ import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { InfiniteMovingCardsDemo } from "../Shared/InfiniteMovingCardsDemo";
+import { SparklesCore } from "./sparkles";
 
 export const StickyScroll = ({
     content,
@@ -60,8 +61,14 @@ export const StickyScroll = ({
 
                 <motion.div animate={{ backgroundColor: backgroundColors[activeCard % backgroundColors.length], }} className="h-[30rem] overflow-y-auto grid grid-cols-4 grid-rows-[auto_repeat(3,1fr)] gap-4 relative space-x-10 rounded-3xl max-w-[1460px] mx-auto" ref={ref}>
                     <div className="col-span-4 my-5 absolte">
-                        <InfiniteMovingCardsDemo />
-                    </div>
+                    <h2 className="text-center text-2xl tracking-[6px] text-white relative">MY SKILLS </h2>
+            <div className="w-1/2 mx-auto h-20 relative">
+                {/* Gradients */}
+                <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+                <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+                <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+                <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+            </div>                    </div>
                     <div className="col-span-2">
                         <div className="div relative flex items-start px-4">
                             <div className="max-w-2xl">

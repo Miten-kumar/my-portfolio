@@ -14,7 +14,10 @@ import taiwind from "../../../public/taiwind.png"
 
 export function InfiniteMovingCardsDemo() {
     return (
-        <div className="h-max  flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] relative">
+        <div className="h-max ng-[#020817] flex flex-col antialiased   relative">
+            {/* <hr className="hr-text gradient mt-5" data-content="MY SKILL" /> */}
+            {/* <h2 className="text-center text-2xl tracking-[6px] text-white">MY SKILLS</h2> */}
+
             <InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
         </div>
     );
@@ -23,7 +26,7 @@ export function InfiniteMovingCardsDemo() {
 const testimonials = [
     {
         image: html,
-        class:"invert"
+        class: "scale-[1.35]"
     },
     {
         image: css,
@@ -33,7 +36,6 @@ const testimonials = [
     },
     {
         image: typescript,
-        class: "rotate-image"
     },
     {
         image: react,
@@ -41,7 +43,6 @@ const testimonials = [
     },
     {
         image: node,
-        class:"invert"
     },
     {
         image: taiwind,
@@ -49,10 +50,10 @@ const testimonials = [
     },
     {
         image: mongodb,
+
     },
     {
         image: next,
-        class: "rotate-image"
 
     },
 ];

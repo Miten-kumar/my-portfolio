@@ -276,7 +276,8 @@ body,
   }
 }
 
-.hr-text {
+/*  */
+.hr-text{
   border: 0;
   line-height: 0.5;
   position: relative;
@@ -290,7 +291,6 @@ body,
 
 .hr-text::before {
   content: "";
-  background: linear-gradient(to right, transparent, white, transparent);
   position: absolute;
   left: 0;
   top: 50%;
@@ -304,7 +304,7 @@ body,
   padding: 0 7px;
   line-height: 1.5em;
   color: white;
-  background-color: var(--slate-900);
+  background-color:#020817;
 }
 
 /* 
