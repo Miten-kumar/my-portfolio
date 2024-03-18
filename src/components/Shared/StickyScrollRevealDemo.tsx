@@ -18,9 +18,9 @@ const content = [
         title: "Web Dev Trio",
         description: "The web is built on the powerful trio of HTML, CSS, and JavaScript.  HTML structures the content, CSS styles the presentation, and JavaScript brings interactivity. Together, they  transform plain text into dynamic and engaging websites.", content: (
             <div className="h-full w-full  flex flex-row  items-center justify-between">
-                <Image src={html}  alt="no-image" className="animate-bounce delay-1000" width={100} />
-                <Image src={css}  alt="no-image" className="animate-bounce delay-100" width={100}/>
-                <Image src={js}  alt="no-image" className="animate-bounce delay-300" width={100} />
+                <Image src={html} alt="no-image" className="animate-bounce delay-1000" width={100} />
+                <Image src={css} alt="no-image" className="animate-bounce delay-100" width={100} />
+                <Image src={js} alt="no-image" className="animate-bounce delay-300" width={100} />
             </div>
         ),
     },
@@ -28,7 +28,7 @@ const content = [
         title: "Front-end Frameworks",
         description: "React builds user interfaces with reusable components, allowing for clean and maintainable code. Next.js extends React by adding features like server-side rendering and static site generation. This powerful duo helps developers create fast, scalable, and SEO-friendly web applications.", content: (
             <div className="h-full w-full  flex items-center justify-center">
-                <Image src={webtrio}  alt="no-image" className="animate-bounce" />
+                <Image src={webtrio} alt="no-image" className="animate-bounce" />
             </div>
         ),
     },
@@ -36,8 +36,8 @@ const content = [
         title: "Backend Frameworks",
         description: "Node.js unlocks the power of JavaScript for server-side development. It excels at building fast and efficient applications. Express.js acts as a powerful toolkit on top of Node.js, streamlining web application creation. By offering features for routing, middleware, and more, Express.js makes building APIs and web applications with Node.js a breeze.", content: (
             <div className="h-full w-full  flex flex-row  items-center justify-around">
-                <Image src={node}  alt="no-image" className="animate-bounce delay-1000" width={100} />
-                <Image src={express}  alt="no-image" className="animate-bounce delay-100" width={100}/>
+                <Image src={node} alt="no-image" className="animate-bounce delay-1000" width={100} />
+                <Image src={express} alt="no-image" className="animate-bounce delay-100" width={100} />
 
             </div>
         ),
@@ -46,9 +46,9 @@ const content = [
         title: "Css (UI) Frameworks",
         description: "UI frameworks like Shadcn UI, Tailwind CSS, Material UI, and Acertitude UI accelerate web development.  Each offers pre-built components or utility classes for styling and functionality.  This saves time and ensures consistency, allowing developers to focus on the unique features of their web application.", content: (
             <div className="h-full w-full  flex flex-row  items-center justify-around">
-                <Image src={shadcn}  alt="no-image" className="animate-bounce delay-1000" width={80}/>
-                <Image src={material}  alt="no-image" className="animate-bounce delay-500" width={80} />
-                <Image src={taiwind}  alt="no-image" className="animate-bounce delay-75" width={80} />
+                <Image src={shadcn} alt="no-image" className="animate-bounce delay-1000" width={80} />
+                <Image src={material} alt="no-image" className="animate-bounce delay-500" width={80} />
+                <Image src={taiwind} alt="no-image" className="animate-bounce delay-75" width={80} />
             </div>
         ),
     },
@@ -60,7 +60,6 @@ const content = [
 export function StickyScrollRevealDemo() {
     return (
         <div className="w-10/12 mx-auto -translate-y-20">
-            
             <StickyScroll content={content} />
         </div>
     );
