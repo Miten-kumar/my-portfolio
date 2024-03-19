@@ -4,10 +4,19 @@ import { Meteors } from "../ui/meteors";
 export function MeteorsDemo() {
   return (
     // <div className=" h-full overflow-hidden">
-      <div className="grid grid-cols-4 gap-3 justify-center w-11/12 mx-auto my-10 h-96 ">
-        <div className=" w-full relative max-w-xs mx-auto h-80">
+    <>
+      <div className="w-full mx-auto h-full relative overflow-hidden items-center justify-center rounded-md">
+        {/* Gradients */}
+        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-3/5 blur-sm" />
+        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+
+      <div className="grid grid-cols-4  justify-center w-10/12  mx-auto mt-10">
+
+        <div className=" w-full relative max-w-xs mx-auto h-min">
           <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-          <div className="relative shadow-xl bg-gray-900 border border-gray-800   px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+          <div className="relative shadow-xl bg-gray-900 border border-gray-800   px-2 py-2 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
             <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +63,7 @@ export function MeteorsDemo() {
           <span >+91 9510039054</span>
           <span>mitup7869@gmail.com</span>
         </div>
-    
+
         <div className="flex flex-col gap-2">
           <h4 className="border-b-2 w-min border-red-500 hover:border-red-300 mb-5">Social</h4>
           <span>LinkedIn</span>
@@ -63,7 +72,8 @@ export function MeteorsDemo() {
           <span>Github-Two</span>
         </div>
       </div>
-
+      </div>
+    </>
     // </div>
   );
 }

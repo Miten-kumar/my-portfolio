@@ -11,7 +11,6 @@ import express from "../../../public/express.png"
 import shadcn from "../../../public/shadcn.png"
 import taiwind from "../../../public/taiwind.png"
 import material from "../../../public/material_ui.png"
-import { TracingBeam } from "../ui/tracing-beam";
 
 const content = [
     {
@@ -61,6 +60,7 @@ export function StickyScrollRevealDemo() {
     return (
         <div className="w-10/12 mx-auto -translate-y-20">
             <StickyScroll content={content} />
+
         </div>
     );
 }

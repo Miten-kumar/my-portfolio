@@ -3,8 +3,6 @@ import React, { useRef } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { InfiniteMovingCardsDemo } from "../Shared/InfiniteMovingCardsDemo";
-import { SparklesCore } from "./sparkles";
 
 export const StickyScroll = ({
     content,
@@ -55,45 +53,40 @@ export const StickyScroll = ({
         "linear-gradient(to top, #09203f 0%, #537895 100%)"
     ];
     return (
-        <div>
-
-            <motion.div >
-
-                <motion.div animate={{ backgroundColor: backgroundColors[activeCard % backgroundColors.length], }} className="h-[30rem] overflow-y-auto grid grid-cols-4 grid-rows-[auto_repeat(3,1fr)] gap-4 relative space-x-10 rounded-3xl max-w-[1460px] mx-auto" ref={ref}>
-                    <div className="col-span-4 my-5 absolte">
+        <motion.div >
+            <motion.div animate={{ backgroundColor: backgroundColors[activeCard % backgroundColors.length], }} className="h-[30rem] overflow-y-auto grid grid-cols-4 grid-rows-[auto_repeat(3,1fr)] gap-4 relative space-x-10 rounded-3xl max-w-[1460px] mx-auto" ref={ref}>
+                <div className="col-span-4 my-5 absolte">
                     <h2 className="text-center text-2xl tracking-[6px] text-white relative">MY SKILLS </h2>
-            <div className="w-1/2 mx-auto h-20 relative">
-                {/* Gradients */}
-                <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-                <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-                <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-                <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
-            </div>                    </div>
-                    <div className="col-span-2">
-                        <div className="div relative flex items-start px-4">
-                            <div className="max-w-2xl">
-                                {content.map((item, index) => (
-                                    <div key={item.title + index} className="my-10">
-                                        <motion.h2 initial={{ opacity: 0, }} animate={{ opacity: activeCard === index ? 1 : 0.3, }} className="text-2xl font-bold text-slate-100" >
-                                            {item.title}
-                                        </motion.h2>
-                                        <motion.p initial={{ opacity: 0, }} animate={{ opacity: activeCard === index ? 1 : 0.3, }} className="text-kg text-slate-300 max-w-sm mt-10 text-justify" >
-                                            {item.description}
-                                        </motion.p>
-                                    </div>
-                                ))}
-                            </div>
+                    <div className="w-1/2 mx-auto h-20 relative">
+                        {/* Gradients */}
+                        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+                        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+                        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+                        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+                    </div>                    </div>
+                <div className="col-span-2">
+                    <div className="div relative flex items-start px-4">
+                        <div className="max-w-2xl">
+                            {content.map((item, index) => (
+                                <div key={item.title + index} className="my-10">
+                                    <motion.h2 initial={{ opacity: 0, }} animate={{ opacity: activeCard === index ? 1 : 0.3, }} className="text-2xl font-bold text-slate-100" >
+                                        {item.title}
+                                    </motion.h2>
+                                    <motion.p initial={{ opacity: 0, }} animate={{ opacity: activeCard === index ? 1 : 0.3, }} className="text-kg text-slate-300 max-w-sm mt-10 text-justify" >
+                                        {item.description}
+                                    </motion.p>
+                                </div>
+                            ))}
                         </div>
                     </div>
-                    <div className="row-span-3 col-start-3 row-start-2 items-start ">
-                        <motion.div animate={{ background: linearGradients[activeCard % linearGradients.length], }} className={cn("hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden", contentClassName)}>
-                            {content[activeCard].content ?? null}
-                        </motion.div>
-                    </div>
+                </div>
+                <div className="row-span-3 col-start-3 row-start-2 items-start ">
+                    <motion.div animate={{ background: linearGradients[activeCard % linearGradients.length], }} className={cn("hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden", contentClassName)}>
+                        {content[activeCard].content ?? null}
+                    </motion.div>
+                </div>
 
-                </motion.div>
             </motion.div>
-
-        </div>
+        </motion.div>
     );
 };

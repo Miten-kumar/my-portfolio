@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <>
       <Herosection />
+      {/* <GoogleGeminiEffectDemo /> */}
       <SkillSection />
       <ProjectSection />
-      <GoogleGeminiEffectDemo />
       <FooterCard/>
     </>
   )
