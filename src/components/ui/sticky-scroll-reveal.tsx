@@ -64,7 +64,7 @@ export const StickyScroll = ({
                         <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
                         <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
                     </div>                    </div>
-                <div className="col-span-2">
+                <div className="col-span-2" id="my_skills">
                     <div className="div relative flex items-start px-4">
                         <div className="max-w-2xl">
                             {content.map((item, index) => (
@@ -81,7 +81,7 @@ export const StickyScroll = ({
                     </div>
                 </div>
                 <div className="row-span-3 col-start-3 row-start-2 items-start ">
-                    <motion.div animate={{ background: linearGradients[activeCard % linearGradients.length], }} className={cn("hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden", contentClassName)}>
+                    <motion.div animate={{ background: linearGradients[activeCard % linearGradients.length], }} className={cn(" block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden", contentClassName)}>
                         {content[activeCard].content ?? null}
                     </motion.div>
                 </div>

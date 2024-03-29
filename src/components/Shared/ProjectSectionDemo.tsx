@@ -14,8 +14,8 @@ import { LampDemo } from "./LampDemo";
 
 export function ProjectSectionDemo() {
     return (
-        <TracingBeam className="px-6 mt-14">
-            <h2 className="text-center text-2xl tracking-[6px] text-white relative ">MY PROJECTS </h2>
+        <TracingBeam className="px-6 mt-14" >
+            <h2 className="text-center text-2xl tracking-[6px] text-white relative " id="projects">MY PROJECTS </h2>
             <div className="w-full mx-auto h-full relative overflow-hidden items-center justify-center  rounded-md">
                 {/* Gradients */}
                 <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
@@ -52,7 +52,7 @@ export function ProjectSectionDemo() {
             </div>
 
 
-            <div className="max-w-2xl mx-auto antialiased pt-4 relative">
+            <div className="max-w-2xl mx-auto antialiased pt-4 relative" >
                 {dummyContent.map((item, index) => (
                     <div key={`content-${index}`} className="mb-10">
                         <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">

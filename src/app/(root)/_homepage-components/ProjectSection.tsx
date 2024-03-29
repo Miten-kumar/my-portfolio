@@ -5,10 +5,8 @@ import React from "react";
 
 export default function ProjectSection() {
     return (
-        <div className="">
-            <div className="md:max-w-[1460px] w-full mx-auto -translate-y-20 ">
+            <div className="md:max-w-[1460px] w-full mx-auto" >
                 <ProjectSectionDemo />
             </div>
-        </div>
     );
 }

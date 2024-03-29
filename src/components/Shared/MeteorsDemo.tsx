@@ -3,8 +3,7 @@ import { Meteors } from "../ui/meteors";
 
 export function MeteorsDemo() {
   return (
-    // <div className=" h-full overflow-hidden">
-    <>
+    <div className="mt-20">
       <div className="w-full mx-auto h-full relative overflow-hidden items-center justify-center rounded-md">
         {/* Gradients */}
         <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
@@ -73,7 +72,6 @@ export function MeteorsDemo() {
         </div>
       </div>
       </div>
-    </>
-    // </div>
+    </div>
   );
 }
