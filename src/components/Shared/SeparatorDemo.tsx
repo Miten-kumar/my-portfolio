@@ -30,7 +30,7 @@ export function SeparatorDemo() {
           <Separator orientation="vertical" />
           <Link href="">Resume</Link >
           <Separator orientation="vertical" />
-          <Link href="">Contect</Link >
+          <Link href="/contect">Contect</Link >
         </div>
       </div>
       <Image width={50} src={menubar} alt="no-icon" className={`z-20 object-cover  pr-2 md:hidden top-3 fixed right-0`} onClick={toggleMenu}></Image>
@@ -56,7 +56,7 @@ export function SeparatorDemo() {
             Resume
           </Link >
           <Separator orientation="vertical" />
-          <Link href="" className="font-light">
+          <Link href="/contect" className="font-light">
             <Image width={26} src={contect} alt="no-icon"  className="mx-auto"></Image>
             Contect
           </Link >

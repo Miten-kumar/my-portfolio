@@ -2,10 +2,10 @@
 import React from "react";
 import { AnimatedTooltip } from "../ui/animated-tooltip";
 import { FaGithub } from "react-icons/fa";
-import instagram from "../../../public/instagram.png"
-import github from "../../../public/github.png"
-import linkedin from "../../../public/linkedin.png"
-import location from "../../../public/location.png"
+import instagram from "../../../public/instagram_contect.png"
+import github from "../../../public/github_contect.png"
+import linkedin from "../../../public/linkedin_contect.png"
+import location from "../../../public/home.png"
 const people = [
   {
     id: 1,
