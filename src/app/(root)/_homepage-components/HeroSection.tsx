@@ -8,16 +8,16 @@ export default function Herosection() {
   return (
 
     <div className="md:max-w-[1460px] w-full mx-auto h-[600px]">
-       <SeparatorDemo/>
-      <div className="grid lg:grid-cols-3 grid-cols-1 items-center justify-center h-full">
-        <div className="lg:col-span-2 col-span-1 ">
+      <SeparatorDemo />
+      <div className="grid lg:grid-cols-2 grid-cols-1 mx-auto items-center h-full w-11/12">
+        <div className="order-2 lg:order-1">
           <TypewriterEffectSmoothDemo />
         </div>
-        <div className="lg:block hidden">
-
+        <div className="order-1 lg:order-2 mt-28 lg:mt-0 flex justify-end">
           <ThreeDCardDemo />
         </div>
       </div>
+
     </div>
   )
 }

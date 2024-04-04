@@ -86,7 +86,7 @@ export function SignupFormDemo() {
                     </div>
                 </div> */}
                 <div className=" md:w-10/12 w-11/12 mx-auto">
-                    <h2 className="text-center lg:block hidden">Let's get in touch</h2>
+                    <h2 className="text-center text-4xl lg:block hidden">Click. Chat. Connect.</h2>
                     <h4 className="text-center md:my-10 my-5 lg:hidden block tracking-wide font-normal">Need help? Message me directly</h4>
                     <h4 className="text-center my-10 lg:block hidden tracking-wide font-normal">Curious about something? Just shoot me a message on any of my social media platforms.</h4>
                     <div className="w-full md:my-10 ">

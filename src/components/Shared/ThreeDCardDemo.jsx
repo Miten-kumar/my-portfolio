@@ -4,14 +4,14 @@ import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import cardImage from "../../../public/graph.svg"
-import cardImageTwo from "../../../public/IMG_20240303_112040-removebg-preview.png"
+import profile_Image from "../../../public/profilepic_1 (1).png"
 
 export function ThreeDCardDemo() {
   return (
     <CardContainer className="inter-var">
-      <CardItem translateZ="100" className="overflow-hidden h-96  w-96 relative border rounded-full flex justify-center">
-        <Image src={cardImage} width={500} className="z-0 absolute rounded-xl group-hover/card:shadow-xl bottom" alt="thumbnail"/>
-        <Image src={cardImageTwo} width={250} className=" z-10 absolute rounded-xl group-hover/card:shadow-xl  " alt="thumbnail"/>
+      <CardItem translateZ="100" className=" relative border rounded-3xl h-96 w-96  items-center flex justify-center">
+        <Image src={cardImage}  className="z-0 absolute rounded-xl h-96 w-96 group-hover/card:shadow-xl text-center " alt="thumbnail"/>
+        <Image src={profile_Image}  className=" absolute h-96 w-64 rounded-xl group-hover/card:shadow-xl opacity-55 " alt="thumbnail"/>
       </CardItem>
     </CardContainer>
   );

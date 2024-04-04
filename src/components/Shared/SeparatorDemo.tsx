@@ -21,7 +21,7 @@ export function SeparatorDemo() {
     <>
       <div className="flex justify-between items-center fixed backdrop-blur-md md:max-w-[1460px] w-full z-20  h-14">
         <Image width={150} src={logo} alt="no-icon" className=" object-cover ml-3 mt-3"></Image>
-        <div className="md:flex hidden h-5  space-x-4 text-sm cursor-pointer  mx-20">
+        <div className="md:flex hidden h-5  space-x-4 text-sm cursor-pointer  mx-14">
           <Link href="">About</Link >
           <Separator orientation="vertical" />
           <Link href="#Expertise">Expertise</Link >
