@@ -22,7 +22,7 @@ export function TypewriterEffectSmoothDemo() {
     },
   ];
   return (
-    <div className="flex flex-col items-center justify-end h-min ">
+    <div className="flex flex-col items-center justify-end h-min mt-5">
 
       <TypewriterEffectSmooth words={words} />
       <HeroHighlightDemo/>

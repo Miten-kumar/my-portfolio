@@ -5,11 +5,15 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { DirectionAwareHover } from "../ui/direction-aware-hover";
 import applesso from "../../../public/apple sso.png"
+import Points from "../../../public/right-arrow.png"
 import bloggImage from "../../../public/blogg_app.png"
 import dockerImage from "../../../public/docker_Image.png"
 import { InfiniteMovingCardsDemo } from "./InfiniteMovingCardsDemo";
 import { SparklesCore } from "../ui/sparkles";
 import { LampDemo } from "./LampDemo";
+import Image from "next/image";
+import Link from "next/link";
+import { LiaExternalLinkAltSolid } from "react-icons/lia";
 
 
 export function ProjectSectionDemo() {
@@ -42,13 +46,13 @@ export function ProjectSectionDemo() {
                             {item.badge}
                         </h2>
 
-                        <p className="text-xl font-semibold mb-4">
+                        <p className="text-xl text-center md:text-start font-semibold mb-4">
                             {item.title}
                         </p>
 
-                        <div className="text-sm  prose prose-sm dark:prose-invert ">
+                        <div className="md:text-sm text-[12px] ml-2 prose prose-sm dark:prose-invert ">
                             <div className="row-span-3 col-start-3 row-start-2">
-                                <motion.div className={cn("hidden text-center lg:block h-60 w-full rounded-md sticky top-10 overflow-scroll")}>
+                                <motion.div className={cn("text-center h-60 w-full rounded-md sticky top-10 overflow-scroll")}>
                                     {item.content ?? null}
                                 </motion.div>
                             </div>
@@ -57,8 +61,6 @@ export function ProjectSectionDemo() {
                     </div>
                 ))}
             </div>
-            {/* <hr className="hr-text gradient mt-5" data-content="My Current Tech Stack" />
-            <InfiniteMovingCardsDemo /> */}
         </TracingBeam>
     );
 }
@@ -68,17 +70,20 @@ const dummyContent = [
         title: "Apple Sso with NextAuth",
         description: (
             <>
-                <p>
-                    Recently Apple are change their configuration with new setting up and as usual their privacy🔏  too and also  their are not perfectly mention that how we configure our web app with Sign in with apple so in this document we Learn and see how to embed this feature with Nextauth.js  in Next.js
+                <p className="text-sm leading-6 text-justify text-white/90">
+                    <Image src={Points} alt="no-image" className="w-5 inline-flex" />
+                    Recently Apple are change their configuration with new setting up and as usual their privacy🔏  too and also  their are not perfectly mention that how we configure our web app with Sign in with apple so in this document we Learn and see how to embed this feature with Nextauth in <Link className="underline font-semibold" href="https://docs.google.com/document/d/1Y5jWDMWTkRPOSrPVS8UnkjZ-TmgrUOxyqHBz95CHx_Q/edit?usp=sharing" target="_blank" >  Next.js <LiaExternalLinkAltSolid className="inline text-lg" /></Link>
+                    ...
                 </p>
-                <p>
+                <p className="mt-5 text-sm leading-6 text-justify text-white/90 md:block hidden ">
+                    <Image src={Points} alt="no-image" className="w-5 inline-flex" />
+
                     Next.js is an excellent choice for building full-stack React applications that require fast performance, SEO optimization, and a streamlined development experience. It's particularly well-suited for content-heavy websites and applications that prioritize initial page load speed.
                 </p>
-                <p>
+                <p className="mt-5 text-sm leading-6 text-justify text-white/90 md:block hidden">
+                    <Image src={Points} alt="no-image" className="w-5 inline-flex" />
                     Basically next auth is by default providers attached with next js or we can also say that its default feature or library which is able to add multiple sso like sign in Google, sign in with github,  sign in with facebook and so many, yes sign in with apple is one of them .Using NextAuth.js for Apple Sign-In with SSO in your Next.js application can significantly improve the user experience, security, and development process. It streamlines the integration,
                     provides a robust and secure authentication system, and gives you flexibility to customize it to your needs
-
-
                 </p>
             </>
         ),
@@ -92,7 +97,8 @@ const dummyContent = [
         title: "Blog Site",
         description: (
             <>
-                <p>
+                <p className="text-sm leading-6 text-justify text-white/90">
+                    <Image src={Points} alt="no-image" className="w-5 inline-flex" />
                     My project blog app that includes CRUD operations
                     and a user-friendly sign-in/sign-up process. It
                     leverages the MERN stack, allowing users to
@@ -103,7 +109,8 @@ const dummyContent = [
                     ensures a smooth user experience, combining robust
                     authentication with versatile content management.
                 </p>
-                <p>
+                <p className="text-sm leading-6 text-justify text-white/90 mt-5">
+                    <Image src={Points} alt="no-image" className="w-5 inline-flex" />
                     In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
                     veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
                     reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
@@ -122,7 +129,8 @@ const dummyContent = [
         title: "Dockerization Your Base Project"
         , description: (
             <>
-                <p>
+                <p className="text-sm leading-6 text-justify text-white/90">
+                    <Image src={Points} alt="no-image" className="w-5 inline-flex" />
                     I've crafted a script for Dockerizing your base project,
                     ensuring compatibility across Windows, macOS, and
                     Linux. By executing the script, Docker will be
