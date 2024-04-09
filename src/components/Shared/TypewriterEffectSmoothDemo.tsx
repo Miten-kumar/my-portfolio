@@ -26,7 +26,7 @@ export function TypewriterEffectSmoothDemo() {
 
       <TypewriterEffectSmooth words={words} />
       <HeroHighlightDemo/>
-      <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base mb-5 lg:block hidden">
+      <p className="text-neutral-600 dark:text-neutral-200 text-base mb-5">
       Hands on In to<span className="text-orange-600">  MERN Stack </span>
       </p>
       <AnimatedTooltipPreview />

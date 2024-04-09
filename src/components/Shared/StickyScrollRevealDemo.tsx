@@ -58,7 +58,7 @@ const content = [
 ];
 export function StickyScrollRevealDemo() {
     return (
-        <div className="w-10/12 mx-auto" id="Expertise">
+        <div className="w-10/12 mx-auto mt-10" id="Expertise">
             <StickyScroll content={content} />
         </div>
     );

@@ -1,5 +1,6 @@
 import React from "react";
 import { Meteors } from "../ui/meteors";
+import Link from "next/link";
 
 export function MeteorsDemo() {
   return (
@@ -41,9 +42,9 @@ export function MeteorsDemo() {
               Ready to take the next step? Drop me a message via below press Explor button and let's bring your ideas to life together!
             </p>
 
-            <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+            <Link href="/contect" className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
               Explore
-            </button>
+            </Link>
 
             {/* Meaty part - Meteor effect */}
             <Meteors number={20} />
