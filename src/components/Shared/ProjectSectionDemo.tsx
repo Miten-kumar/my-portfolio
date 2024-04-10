@@ -52,7 +52,7 @@ export function ProjectSectionDemo() {
 
                         <div className="md:text-sm text-[12px] ml-2 prose prose-sm dark:prose-invert ">
                             <div className="row-span-3 col-start-3 row-start-2">
-                                <motion.div className={cn("text-center h-60 w-full rounded-md sticky top-10 overflow-scroll")}>
+                                <motion.div className={cn("text-center md:h-60  w-full  sticky top-10 overflow-scroll")}>
                                     {item.content ?? null}
                                 </motion.div>
                             </div>
