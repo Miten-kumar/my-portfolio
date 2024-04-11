@@ -5,18 +5,18 @@ import logo from "../../../public/logo-two.png"
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "../ui/hero-highlight";
-export function MeteorsDemo() {
+export function FooterCardDemo() {
   return (
     <div className="mt-20">
-      <div className="w-full mx-auto h-full relative lg:overflow-hidden overflow-visible items-center justify-center rounded-md">
+      <div className="w-full mx-auto h-full relative  items-center justify-center rounded-md">
         {/* Gradients */}
-        <div className="lg:block hidden ">
+        <div className=" hidden ">
           <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
           <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
           <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-3/5 blur-sm" />
           <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
         </div>
-        <hr className="w-2/3 mx-auto bg-white h-px lg:hidden block"></hr>
+        <hr className="w-11/12 lg:w-2/3 mx-auto h-0.5  block"></hr>
         <div className="grid lg:grid-cols-4 grid-cols-3  justify-center w-10/12  mx-auto md:mt-10">
 
           <div className="flex flex-col lg:hidden md:col-span-2 col-span-3 ">
@@ -46,7 +46,7 @@ export function MeteorsDemo() {
             </div>
           <div className="md:my-0 my-10 w-full relative max-w-xs mx-auto h-min md:col-span-1 col-span-3">
             <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-            <div className="relative shadow-xl bg-gray-900 border border-gray-800   px-2 py-2 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+            <div className="relative shadow-xl bg-gray-900 border border-gray-800 overflow-hidden  px-2 py-2 h-full rounded-2xl flex flex-col justify-end items-start">
               <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

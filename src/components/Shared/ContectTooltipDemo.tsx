@@ -41,7 +41,7 @@ const people = [
   },
 ];
 
-export function AnimatedTooltipPreview() {
+export function ContectTooltipDemo() {
   return (
     <div className="flex flex-row items-center justify-center w-full my-5">
       <AnimatedTooltip items={people} />

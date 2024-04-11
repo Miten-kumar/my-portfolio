@@ -34,7 +34,7 @@ import strapi from "../../../public/stapiVector.png"
 import typescript from "../../../public/typescript.png"
 import postman from "../../../public/postman.png"
 import { SparklesCore } from "../ui/sparkles";
-export function BentoGridDemo() {
+export function SkillSetGridDemo() {
     return (
         <>
             <h2 className="text-center text-2xl tracking-[6px] text-white relative mb-5" id="Expertise">MY SKILLS </h2>

@@ -12,14 +12,14 @@ import Image from "next/image";
 import { Separator } from "../ui/Separator";
 import Link from "next/link";
 
-export function SignupFormDemo() {
+export function ContectUsDemo() {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log("Form submitted");
     };
     return (
         <>
-            <div className="lg:grid  grid-cols-2 flex flex-col h-screen  lg:justify-around justify-center items-center mx-auto">
+            <div className="lg:grid  grid-cols-2 flex flex-col h-screen  lg:justify-around justify-center items-center mx-auto height-full">
                 <div className="border  w-10/12 p-4 h-fit mx-auto md:rounded-2xl z-10 shadow-input  flex flex-col items-center justify-center overflow-hidden rounded-md">
                     <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200 pt-4">
                         Let's Chat, Reach Out to Me!
