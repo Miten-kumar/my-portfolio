@@ -1,15 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
-import {
-    IconArrowWaveRightUp,
-    IconBoxAlignRightFilled,
-    IconBoxAlignTopLeft,
-    IconClipboardCopy,
-    IconFileBroken,
-    IconSignature,
-    IconTableColumn,
-} from "@tabler/icons-react";
+import { IconBoxAlignRightFilled, IconGitBranch, IconDatabase, IconBrandGraphql, IconBrandGoogleAnalytics, IconBrandCss3, IconBrandNextjs, IconBrandNodejs } from "@tabler/icons-react";
 import Image from "next/image";
 import html from "../../../public/html.png"
 import css from "../../../public/css-logo.png"
@@ -66,7 +58,7 @@ const items = [
                 <Image src={js} alt="no-image" className=" delay-300 lg:w-20 w-16 md:w-14" />
             </div>
         ),
-        icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500 dark:text-white" />,
+        icon: <IconBrandGoogleAnalytics className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
         title: "Front-end Frameworks",
@@ -77,7 +69,7 @@ const items = [
                 <Image src={next} alt="no-image" className=" delay-200 invert lg:w-16  w-16 md:w-14" />
                 <Image src={react} alt="no-image" className=" delay-100 lg:w-16  w-16 md:w-14" />
             </div>),
-        icon: <IconFileBroken className="h-4 w-4 text-neutral-500 dark:text-white" />,
+        icon: <IconBrandNextjs className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
         title: "Backend Frameworks",
@@ -89,7 +81,8 @@ const items = [
                 <Image src={strapi} alt="no-image" className=" delay-300 lg:w-18  w-14 md:w-12" />
             </div>
         ),
-        icon: <IconSignature className="h-4 w-4 text-neutral-500 dark:text-white" />,
+        icon: <IconBrandNodejs className="h-4 w-4 text-neutral-500 dark:text-white" />
+        ,
     },
     {
         title: "Css (UI) Frameworks",
@@ -104,7 +97,7 @@ const items = [
                 <Image src={acerternity} alt="no-image" className=" delay-300 lg:w-18 invert md:w-14 w-10" />
             </div>
         ),
-        icon: <IconTableColumn className="h-4 w-4 text-neutral-500 dark:text-white" />,
+        icon: <IconBrandCss3 className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
         title: "Empowering APIs",
@@ -115,7 +108,7 @@ const items = [
                 <Image src={sequelize} alt="no-image" className=" delay-100 lg:w-16 w-20 md:w-14" />
             </div>
         ),
-        icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500 dark:text-white" />,
+        icon: <IconBrandGraphql className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
         title: "Database Technologies",
@@ -124,7 +117,7 @@ const items = [
             <Image src={mongodb} alt="no-image" className=" delay-1000  lg:w-28 w-32 md:w-28" />
             <Image src={postgress} alt="no-image" className=" delay-100 lg:w-16 w-20 md:w-14" />
         </div>),
-        icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500 dark:text-white" />,
+        icon: <IconDatabase className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
         title: "Devops Essential Tools",
@@ -136,7 +129,7 @@ const items = [
                 <Image src={github} alt="no-image" className=" delay-100 lg:w-16  w-16 md:w-14" />
                 <Image src={docker} alt="no-image" className=" delay-300 lg:w-18 w-20 md:w-14" />
             </div>),
-        icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500 dark:text-white" />,
+        icon: <IconGitBranch className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
         title: "Key Frameworks",
@@ -144,7 +137,7 @@ const items = [
         header: (
             <div className="h-full w-full  flex flex-row  items-center justify-around border-b-2 rounded-xl">
                 <Image src={typescript} alt="no-image" className=" delay-200  lg:w-16  w-16 md:w-14" />
-                <Image src={postman} alt="no-image" className=" delay-100 lg:w-16  w-16 md:w-14" />
+                <Image src={postman} alt="no-image" className="  lg:w-16  w-16 md:w-14 hover:rotate-[55deg] transition-all duration-500 delay-150" />
             </div>
         ),
         icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500 dark:text-white" />,
