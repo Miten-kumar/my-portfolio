@@ -8,7 +8,7 @@ import about from "../../../public/about.png"
 import skills from "../../../public/skills.png"
 import work from "../../../public/working.png"
 import resume from "../../../public/resume.png"
-import contect from "../../../public/customer-service.png"
+import contact from "../../../public/customer-service.png"
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -63,7 +63,7 @@ export function NavbarDemo() {
             <Separator orientation="vertical" />
             <Link href="">Resume</Link >
             <Separator orientation="vertical" />
-            <Link href='/contect'>Contect</Link >
+            <Link href='/contact'>contact</Link >
           </div>
         </motion.div>
 
@@ -105,9 +105,9 @@ export function NavbarDemo() {
             Resume
           </Link >
           <Separator orientation="vertical" />
-          <Link href='/contect' className="font-light">
-            <Image width={26} src={contect} alt="no-icon" className="mx-auto"></Image>
-            Contect
+          <Link href='/contact' className="font-light">
+            <Image width={26} src={contact} alt="no-icon" className="mx-auto"></Image>
+            contact
           </Link >
         </div>
       </div>

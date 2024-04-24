@@ -12,7 +12,7 @@ import Image from "next/image";
 import { Separator } from "../ui/Separator";
 import Link from "next/link";
 
-export function ContectUsDemo() {
+export function ContactUsDemo() {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log("Form submitted");
@@ -20,14 +20,14 @@ export function ContectUsDemo() {
     return (
         <>
             <div className="lg:grid  grid-cols-2 flex flex-col h-screen  lg:justify-around justify-center items-center mx-auto height-full">
-                <div className="border  w-10/12 p-4 h-fit mx-auto md:rounded-2xl z-10 shadow-input  flex flex-col items-center justify-center overflow-hidden rounded-md">
+                <div className="border  md:w-10/12 w-11/12 p-4 mx-auto md:rounded-2xl z-10 shadow-input md:my-20 flex flex-col items-center justify-center overflow-scroll rounded-md">
                     <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200 pt-4">
                         Let's Chat, Reach Out to Me!
                     </h2>
                     <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
                         Have questions or feedback? I'm here to help. Send me a message and I'will respond within 24 hours.
                     </p>
-                    <form className="my-8 md:w-auto w-full" onSubmit={handleSubmit}>
+                    <form className="mt-8 md:w-auto w-full" onSubmit={handleSubmit}>
                         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
                             <LabelInputContainer>
                                 <Label htmlFor="firstname">First name</Label>
@@ -92,28 +92,28 @@ export function ContectUsDemo() {
                     <div className="w-full md:my-10 ">
                         <div className="flex md:space-x-8 space-x-4 text-sm cursor-pointer justify-center items-center">
                             <Link href="https://github.com/mitenkumar" target="_blank" className="hover:scale-110 transition-all duration-500">
-                                <Image src={github} alt="no-image" className="object-cover !m-0 !p-0 object-top cursor-pointer transition-all duration-500 hover:rotate-45 h-14 w-14 mb-2  relative mx-auto" />
+                                <Image src={github} alt="no-image" className="object-cover !m-0 !p-0 object-top cursor-pointer transition-all duration-500 hover:rotate-45 md:h-14 md:w-14 h-10 w-10 mb-2  relative mx-auto" />
                                 <span className="pt-5 justify-center flex hover:rotate-0">
                                     Github
                                 </span>
                             </Link>
                             <Separator orientation="vertical" className="h-10 flex items-center justify-center mb-10" />
-                            <Link href="https://www.instagram.com/miten_02/" target="_blank"  className="hover:scale-110 transition-all duration-500">
-                                <Image src={instagram} alt="no-image" className="object-cover !m-0 !p-0 object-top cursor-pointer h-14 w-14  110 md:hover:-rotate-45 relative transition duration-500 mx-auto" />
+                            <Link href="https://www.instagram.com/miten_02/" target="_blank"  className="hover:scale-110 transition-all duration-500 flex justify-center  flex-col items-center">
+                                <Image src={instagram} alt="no-image" className="object-cover !m-0 !p-0 object-top cursor-pointer md:h-14 md:w-14 h-10 w-10  110 md:hover:-rotate-45 relative transition duration-500 mx-auto" />
                                 <span className="pt-5 justify-center flex hover:rotate-0">
                                     Instagram
                                 </span>
                             </Link>
                             <Separator orientation="vertical" className="h-10 flex items-center justify-center mb-10" />
-                            <Link href="https://www.linkedin.com/in/miten-patel-8939571b2/" target="_blank"  className="hover:scale-110 transition-all duration-500">
-                                <Image src={linkedin} alt="no-image" className="object-cover !m-0 !p-0 object-top cursor-pointer h-14 w-14   md:hover:rotate-45 relative transition duration-500 mx-auto" />
+                            <Link href="https://www.linkedin.com/in/miten-patel-8939571b2/" target="_blank"  className="hover:scale-110 transition-all duration-500 flex justify-center  flex-col items-center">
+                                <Image src={linkedin} alt="no-image" className="object-cover !m-0 !p-0 object-top cursor-pointer md:h-14 md:w-14 h-10 w-10   md:hover:rotate-45 relative transition duration-500 mx-auto" />
                                 <span className="pt-5 justify-center flex hover:rotate-0">
                                     LinkedIn
                                 </span>
                             </Link>
                             <Separator orientation="vertical" className="h-10 flex items-center justify-center mb-10" />
-                            <Link href="https://maps.app.goo.gl/hxd1M2zPHjEN8g2p9" target="_blank" className="hover:scale-110 transition-all duration-500">
-                                <Image src={location} alt="no-image" className="object-cover !m-0 !p-0 object-top cursor-pointer h-14 w-14   md:hover:-rotate-45 relative transition duration-500 mx-auto" />
+                            <Link href="https://maps.app.goo.gl/hxd1M2zPHjEN8g2p9" target="_blank" className="hover:scale-110 transition-all duration-500 flex justify-center  flex-col items-center">
+                                <Image src={location} alt="no-image" className="object-cover !m-0 !p-0 object-top cursor-pointer md:h-14 md:w-14 h-10 w-10   md:hover:-rotate-45 relative transition duration-500 mx-auto" />
                                 <span className="pt-5 justify-center flex hover:rotate-0">
                                     Location
                                 </span>

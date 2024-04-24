@@ -20,7 +20,7 @@ export function TypewriterEffectSmoothDemo() {
     },
     {
       text: "Miten",
-      className: "text-blue-500 dark:text-[#25a5be]",
+      className: "dark:text-[#f98e2b]",
     },
   ];
   return (
@@ -41,7 +41,7 @@ export function TypewriterEffectSmoothDemo() {
         <TypewriterEffectSmooth words={words} />
         <HeroHighlightDemo />
         <p className="text-neutral-600 dark:text-neutral-200 text-base mb-5 text-center">
-          Hands on In to<span className="text-[#25a5be]">  MERN Stack </span>
+          Hands on In to<span className="text-[#f98e2b]">  MERN Stack </span>
         </p>
         <ContectTooltipDemo />
       </div>
