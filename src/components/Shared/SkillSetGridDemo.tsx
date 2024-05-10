@@ -67,7 +67,7 @@ const items = [
             <div className="h-full w-full  flex flex-row  items-center justify-around border-b-2 rounded-xl">
 
                 <Image src={next} alt="no-image" className=" delay-200 invert lg:w-16  w-16 md:w-14" />
-                <Image src={react} alt="no-image" className=" delay-100 lg:w-16  w-16 md:w-14" />
+                <Image src={react} alt="no-image" className=" delay-100 lg:w-16  w-16 md:w-14 hover:animate-spin" />
             </div>),
         icon: <IconBrandNextjs className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
@@ -104,7 +104,7 @@ const items = [
         description: "GraphQL: The API interface clients love - request specific data.Sequelize: The backend champion - handles database interactions seamlessly.",
         header: (
             <div className="h-full w-full  flex flex-row  items-center justify-around  border-b-2 rounded-xl">
-                <Image src={graphQl} alt="no-image" className=" delay-1000  lg:w-16 w-20 md:w-14" />
+                <Image src={graphQl} alt="no-image" className=" delay-1000  lg:w-16 w-20 md:w-14 hover:animate-spin" />
                 <Image src={sequelize} alt="no-image" className=" delay-100 lg:w-16 w-20 md:w-14" />
             </div>
         ),

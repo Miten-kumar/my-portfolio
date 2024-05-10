@@ -6,7 +6,7 @@ import React from "react";
 
 export default function FooterCard() {
   return (
-      <div className="md:max-w-[1460px]  h-96 w-full mx-auto">
+      <div className="h-96">
       <FooterCardDemo/>
       </div>
   );

@@ -6,7 +6,7 @@ import { SparklesCore } from "@/components/ui/sparkles"
 export default function Herosection() {
   return (
 
-    <div className="md:max-w-[1460px] w-full mx-auto lg:h-[650px] h-svh ">
+    <div className=" lg:h-[650px] h-svh ">
       <div className="lg:grid grid-cols-2 flex flex-col mx-auto items-center h-full w-11/12">
         <div className="order-2 lg:order-1">
           <TypewriterEffectSmoothDemo />

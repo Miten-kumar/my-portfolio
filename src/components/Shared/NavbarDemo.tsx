@@ -11,6 +11,8 @@ import resume from "../../../public/resume.png"
 import contact from "../../../public/customer-service.png"
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { IconUserCircle, IconDeviceDesktopAnalytics,IconScript,IconMessages,IconCode } from "@tabler/icons-react";
+
 
 
 export function NavbarDemo() {
@@ -22,15 +24,9 @@ export function NavbarDemo() {
 
   return (
     <>
-      <div className="flex justify-between items-center fixed backdrop-blur-md md:max-w-[1460px] w-full z-20  h-14">
-        <motion.div initial={{
-          opacity: 0,
-          x: 20,
-        }}
-          animate={{
-            opacity: 1,
-            x: [-30, 0, 0],
-          }}
+      <div className="flex justify-between items-center top-0 fixed left-0 right-0 backdrop-blur-md md:max-w-[1460px] w-full mx-auto z-20  h-14 ">
+        <motion.div initial={{ opacity: 0, x: 20, }}
+          animate={{ opacity: 1, x: [-30, 0, 0], }}
           transition={{
             duration: 2,
             ease: [0.4, 0.0, 0.2, 1],
@@ -68,8 +64,8 @@ export function NavbarDemo() {
         </motion.div>
 
       </div>
-      <motion.div 
-         initial={{
+      <motion.div
+        initial={{
           opacity: 0,
           x: 50,
         }}
@@ -86,28 +82,28 @@ export function NavbarDemo() {
       <div className={`w-full mx-auto flex justify-center items-center fixed md:hidden bottom-0 right-0 h-16 backdrop-blur-3xl z-20 transition-all  duration-300 transform ${isOpen ? "opacity-100 -translate-y-0 " : "opacity-0 translate-y-20"}`}>
         <div className="flex h-5 items-center space-x-4 text-sm justify-center cursor-pointer  ">
           <Link href="" className="font-light">
-            <Image width={26} src={about} alt="no-icon" className="mx-auto"></Image>
+            <IconUserCircle className="mx-auto" />
             About
           </Link >
           <Separator orientation="vertical" />
           <Link href='/#Expertise' className="font-light">
-            <Image width={26} src={skills} alt="no-icon" className="mx-auto"></Image>
+            <IconCode  className="mx-auto"/>
             Skills
           </Link >
           <Separator orientation="vertical" />
           <Link href='/#projects' className="font-light">
-            <Image width={26} src={work} alt="no-icon" className="mx-auto"></Image>
+            <IconDeviceDesktopAnalytics className="mx-auto" />
             Work
           </Link >
           <Separator orientation="vertical" />
           <Link href='' className="font-light">
-            <Image width={26} src={resume} alt="no-icon" className="mx-auto"></Image>
+            <IconScript className="mx-auto"/>
             Resume
           </Link >
           <Separator orientation="vertical" />
           <Link href='/contact' className="font-light">
-            <Image width={26} src={contact} alt="no-icon" className="mx-auto"></Image>
-            contact
+            <IconMessages className="mx-auto"/>
+             contact
           </Link >
         </div>
       </div>
