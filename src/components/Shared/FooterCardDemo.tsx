@@ -53,7 +53,7 @@ export function FooterCardDemo() {
                     <Link target="_blank" href="https://github.com/Miten-Kumar" className="group">
                       <IconBrandGithub className="w-8 h-8 text-gray-700 github_icon transition duration-300 ease-in-out transform hover:scale-105" />
                     </Link>
-                    <Link target="_blank" href="https://twitter.com/i/flow/login?redirect_after_login=%2Fmiten03" className="group">
+                    <Link target="_blank" href="https://twitter.com/miten03" className="group">
                       <IconBrandX className="w-8 h-8 text-gray-700 transition duration-300 ease-in-out transform hover:scale-105 gitlab_icon" />
                     </Link>
                   </div>
@@ -67,7 +67,7 @@ export function FooterCardDemo() {
                   <Link target="_blank" href="https://www.linkedin.com/in/miten-patel-8939571b2/"><span className="mr-1 md:inline-flex hidden text-sm">LinkedIn</span><IconBrandLinkedin className="inline" /></Link>
                   <Link target="_blank" href="https://www.instagram.com/miten_02/"><span className="mr-1 md:inline-flex hidden text-sm">Instagram</span><IconBrandInstagram className="inline" /></Link>
                   <Link target="_blank" href="https://github.com/Miten-Kumar"><span className="mr-1 md:inline-flex hidden text-sm">Github</span><IconBrandGithub className="inline" /></Link>
-                  <Link target="_blank" href="https://twitter.com/i/flow/login?redirect_after_login=%2Fmiten03"><span className="mr-1 md:inline-flex hidden text-sm">Github-II</span><IconBrandX className="inline" /></Link>
+                  <Link target="_blank" href="https://twitter.com/miten03"><span className="mr-1 md:inline-flex hidden text-sm">Twitter</span><IconBrandX className="inline" /></Link>
                 </div>
               </div>
 

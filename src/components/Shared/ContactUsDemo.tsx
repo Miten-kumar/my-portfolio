@@ -7,7 +7,7 @@ import { Textarea } from "../ui/textarea";
 import instagram from "../../../public/instagram_contect.png"
 import github from "../../../public/github_contect.png"
 import linkedin from "../../../public/linkedin_contect.png"
-import location from "../../../public/home.png"
+import location from "../../../public/twitter.png"
 import Image from "next/image";
 import { Separator } from "../ui/Separator";
 import Link from "next/link";
@@ -90,33 +90,26 @@ export function ContactUsDemo() {
                     <h4 className="text-center md:my-10 my-5 lg:hidden block tracking-wide font-normal">Need help? Message me directly</h4>
                     <h4 className="text-center my-10 lg:block hidden tracking-wide font-normal">Curious about something? Just shoot me a message on any of my social media platforms.</h4>
                     <div className="w-full md:my-10 ">
-                        <div className="flex md:space-x-8 space-x-4 text-sm cursor-pointer justify-center items-center">
-                            <Link href="https://github.com/mitenkumar" target="_blank" className="hover:scale-110 transition-all duration-500">
-                                <Image src={github} alt="no-image" className="object-cover !m-0 !p-0 object-top cursor-pointer transition-all duration-500 hover:rotate-45 md:h-14 md:w-14 h-10 w-10 mb-2  relative mx-auto" />
-                                <span className="pt-5 justify-center flex hover:rotate-0">
-                                    Github
-                                </span>
+                        <div className="flex space-x-4 text-xs cursor-pointer justify-center items-center">
+                            <Link href="https://github.com/mitenkumar" target="_blank" className="transition-all duration-500 flex justify-center  flex-col items-center">
+                                <Image src={github} alt="no-image" className="object-cover object-top cursor-pointer h-10 w-10 relative transition duration-500 mx-auto" />
+                                <label className="py-1 mx-auto">Github</label>
                             </Link>
-                            <Separator orientation="vertical" className="h-10 flex items-center justify-center mb-10" />
-                            <Link href="https://www.instagram.com/miten_02/" target="_blank"  className="hover:scale-110 transition-all duration-500 flex justify-center  flex-col items-center">
-                                <Image src={instagram} alt="no-image" className="object-cover !m-0 !p-0 object-top cursor-pointer md:h-14 md:w-14 h-10 w-10  110 md:hover:-rotate-45 relative transition duration-500 mx-auto" />
-                                <span className="pt-5 justify-center flex hover:rotate-0">
-                                    Instagram
-                                </span>
+                            <Separator orientation="vertical" className="h-10 flex items-center justify-center mb-4" />
+                            <Link href="https://www.instagram.com/miten_02/" target="_blank" className="transition-all duration-500 flex justify-center  flex-col items-center">
+                                <Image src={instagram} alt="no-image" className="object-cover object-top cursor-pointer h-10 w-10 relative transition duration-500 mx-auto" />
+                                <label className="py-1 mx-auto">Instagram</label>
                             </Link>
-                            <Separator orientation="vertical" className="h-10 flex items-center justify-center mb-10" />
-                            <Link href="https://www.linkedin.com/in/miten-patel-8939571b2/" target="_blank"  className="hover:scale-110 transition-all duration-500 flex justify-center  flex-col items-center">
-                                <Image src={linkedin} alt="no-image" className="object-cover !m-0 !p-0 object-top cursor-pointer md:h-14 md:w-14 h-10 w-10   md:hover:rotate-45 relative transition duration-500 mx-auto" />
-                                <span className="pt-5 justify-center flex hover:rotate-0">
-                                    LinkedIn
-                                </span>
+                            <Separator orientation="vertical" className="h-10 flex items-center justify-center mb-4" />
+
+                            <Link href="https://www.linkedin.com/in/miten-patel-8939571b2/" target="_blank" className="transition-all duration-500 flex justify-center  flex-col items-center">
+                                <Image src={linkedin} alt="no-image" className="object-cover object-top cursor-pointer h-10 w-10 relative transition duration-500 mx-auto" />
+                                <label className="py-1 mx-auto">LinkedIn</label>
                             </Link>
-                            <Separator orientation="vertical" className="h-10 flex items-center justify-center mb-10" />
-                            <Link href="https://maps.app.goo.gl/hxd1M2zPHjEN8g2p9" target="_blank" className="hover:scale-110 transition-all duration-500 flex justify-center  flex-col items-center">
-                                <Image src={location} alt="no-image" className="object-cover !m-0 !p-0 object-top cursor-pointer md:h-14 md:w-14 h-10 w-10   md:hover:-rotate-45 relative transition duration-500 mx-auto" />
-                                <span className="pt-5 justify-center flex hover:rotate-0">
-                                    Location
-                                </span>
+                            <Separator orientation="vertical" className="h-10 flex items-center justify-center mb-4" />
+                            <Link href="https://twitter.com/miten03" target="_blank" className=" transition-all duration-500 flex  flex-col">
+                                <Image src={location} alt="no-image" className="object-cover object-top cursor-pointer h-10 hover:rotate-45 w-10 relative transition duration-500 mx-auto" />
+                                <label className="py-1 mx-auto">Twitter</label>
                             </Link>
                         </div>
                     </div>
