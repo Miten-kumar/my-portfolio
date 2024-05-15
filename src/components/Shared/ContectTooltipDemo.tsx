@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import instagram from "../../../public/instagram_contect.png"
 import github from "../../../public/github_contect.png"
 import linkedin from "../../../public/linkedin_contect.png"
-import location from "../../../public/twitter.png"
+import twitter from "../../../public/twitter.png"
 const people = [
   {
     id: 1,
@@ -35,7 +35,7 @@ const people = [
     id: 4,
     name: "Twitter",
     designation: "@miten03",
-    image: location,
+    image: twitter,
     url: "https://twitter.com/miten03"
 
   },

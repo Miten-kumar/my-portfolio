@@ -7,7 +7,7 @@ import { Textarea } from "../ui/textarea";
 import instagram from "../../../public/instagram_contect.png"
 import github from "../../../public/github_contect.png"
 import linkedin from "../../../public/linkedin_contect.png"
-import location from "../../../public/twitter.png"
+import twitter from "../../../public/twitter.png"
 import Image from "next/image";
 import { Separator } from "../ui/Separator";
 import Link from "next/link";
@@ -108,7 +108,7 @@ export function ContactUsDemo() {
                             </Link>
                             <Separator orientation="vertical" className="h-10 flex items-center justify-center mb-4" />
                             <Link href="https://twitter.com/miten03" target="_blank" className=" transition-all duration-500 flex  flex-col">
-                                <Image src={location} alt="no-image" className="object-cover object-top cursor-pointer h-10 hover:rotate-45 w-10 relative transition duration-500 mx-auto" />
+                                <Image src={twitter} alt="no-image" className="object-cover object-top cursor-pointer h-10 hover:rotate-45 w-10 relative transition duration-500 mx-auto" />
                                 <label className="py-1 mx-auto">Twitter</label>
                             </Link>
                         </div>

@@ -28,6 +28,7 @@ const config: Config = {
     },
     extend: {
       colors: {
+        'portfolio-cyan': '#3cb4bd',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

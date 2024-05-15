@@ -1,0 +1,67 @@
+"use client";
+import { IconArrowLeft, IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandX } from "@tabler/icons-react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import React from "react";
+
+
+export function AboutUsDemo() {
+    const router = useRouter()
+    return (
+        <div className="w-10/12 mx-auto tracking-wide ">
+            <span className="mt-2 cursor-pointer" onClick={() => router.replace('/')}>
+                <IconArrowLeft />
+            </span>
+            <div className="grid md:grid-cols-2 grid-cols-1 mt-10 md:gap-2 gap-10 ">
+                <div className="">
+
+                    <h2 className="opacity-90">Patel Miten</h2>
+                    <h4 className="tracking-wider opacity-90"> - Full Stack Web Developer</h4>
+                    <h5 className="lg:w-7/12 w-11/12 mt-5 font-normal text-base opacity-75">I build pixel-perfect, engaging, and accessible digital experiences.</h5>
+
+                    <div className="flex md:mt-24 mt-10 gap-8 text-neutral-400">
+                        <div className="flex gap-4"> <Link target="_blank" href="https://www.linkedin.com/in/miten-patel-8939571b2" className="group">
+                            <IconBrandLinkedin className="w-8 h-8 text-gray-700 linkedin_icon transition duration-300 ease-in-out transform hover:scale-105" />
+                        </Link>
+                            <div className="flex gap-4">
+                                <Link target="_blank" href="https://www.instagram.com/miten_02/" className="group">
+                                    <IconBrandInstagram className="w-8 h-8 text-gray-700  transition duration-300 instagram_icon transform hover:scale-105" />
+                                </Link>
+                            </div>
+
+                            <Link target="_blank" href="https://github.com/Miten-Kumar" className="group">
+                                <IconBrandGithub className="w-8 h-8 text-gray-700 github_icon transition duration-300 ease-in-out transform hover:scale-105" />
+                            </Link>
+                            <Link target="_blank" href="https://twitter.com/miten03" className="group">
+                                <IconBrandX className="w-8 h-8 text-gray-700 transition duration-300 ease-in-out transform hover:scale-105 gitlab_icon" />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="space-y-5 text-justify md:text-left text-lg font-light  leading-relaxed opacity-75 ">
+                    <p className="">As a full stack web developer, I bring creativity, innovation, and meticulous attention to detail to every project. With expertise in both front-end and back-end technologies, I specialize in crafting seamless digital experiences from start to finish.</p>
+
+                    <p className=""> I've meticulously crafted every aspect of this portfolio site, infusing it with my unique design sensibilities and innovative ideas. This site not only showcases my skills but also serves as a testament to my creativity and ability to transform concepts into compelling realities.</p>
+
+                    <p>When I'm not on the computer, I love spending time with family and pets. Gardening is my passion; I enjoy growing new and interesting plants, learning about their growth, and marveling at their beauty. It's a soothing hobby that keeps me connected to the natural world's wonders.</p>
+
+                    <p> - The links below offer an overview of my skills and resume.</p>
+                    <div className="flex md:inline md:space-x-10 justify-center space-x-20 underline text-sm mx-3">
+                        <Link href="/#Expertise" className="">My Skill</Link>
+                        <Link href="/resume" className="">Resume</Link>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex flex-col mt-16 ">
+                    <h2 className="text-4xl opacity-90 text-center">Here's a bit about me</h2>
+                    <ul className="font-extralight opacity-75 w-2/5 mx-auto">
+                        <li> - I'm 22 years old.</li>
+                        <li> - I have over 1.6 years of experience in full-stack development.</li>
+                        <li> - I recently completed my Bachelor's in Information Technology Engineering with a CGPA of 8.56 in 2023.</li>
+                        <li> - I am currently working at Aspire Soft Serv in Ahmedabad.</li>
+                    </ul>
+                </div>
+        </div >
+    );
+}

@@ -9,6 +9,7 @@ body,
   margin: 0;
   padding: 0;
   scroll-behavior: smooth !important;
+  
 }
 
 ::-webkit-scrollbar {
@@ -411,4 +412,10 @@ ul{
 
 .gitlab_icon:hover{
     filter: invert(100%) drop-shadow(1px 1px 1px #f34a02) drop-shadow(0 0 10px #f74002);  
+}
+
+body ::selection {
+  background: cyan; /* Change this to your desired color */
+  color: #24262b; /* Optional: Change the text color */
+  user-select: none; 
 }

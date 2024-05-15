@@ -21,7 +21,7 @@ export function HeroHighlightDemo() {
                 className="md:text-center text-start md:mb-4 mb-8 w-10/12 mx-auto text-xl tracking-wide font-normal text-neutral-400 lg:block hidden"
             >
                 From napkin sketch to flawless website, I speak the language of the web. Any tool, any library, any tech  -
-                <Highlight className="text-black dark:text-white">
+                <Highlight className="text-black">
                     I'm your translator
                 </Highlight>
             </motion.h1>
