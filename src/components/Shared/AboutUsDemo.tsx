@@ -1,5 +1,5 @@
 "use client";
-import { IconArrowLeft, IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandX } from "@tabler/icons-react";
+import { IconArrowLeft, IconArrowRight, IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandX } from "@tabler/icons-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
@@ -9,7 +9,7 @@ export function AboutUsDemo() {
     const router = useRouter()
     return (
         <div className="w-10/12 mx-auto tracking-wide ">
-            <span className="mt-2 cursor-pointer" onClick={() => router.replace('/')}>
+            <span className="mt-2 opacity-90 cursor-pointer" onClick={() => router.replace('/')}>
                 <IconArrowLeft />
             </span>
             <div className="grid md:grid-cols-2 grid-cols-1 mt-10 md:gap-2 gap-10 ">
@@ -19,7 +19,7 @@ export function AboutUsDemo() {
                     <h4 className="tracking-wider opacity-90"> - Full Stack Web Developer</h4>
                     <h5 className="lg:w-7/12 w-11/12 mt-5 font-normal text-base opacity-75">I build pixel-perfect, engaging, and accessible digital experiences.</h5>
 
-                    <div className="flex md:mt-24 mt-10 gap-8 text-neutral-400">
+                    <div className="flex md:mt-14 mt-10 gap-8 text-neutral-400">
                         <div className="flex gap-4"> <Link target="_blank" href="https://www.linkedin.com/in/miten-patel-8939571b2" className="group">
                             <IconBrandLinkedin className="w-8 h-8 text-gray-700 linkedin_icon transition duration-300 ease-in-out transform hover:scale-105" />
                         </Link>
@@ -47,21 +47,24 @@ export function AboutUsDemo() {
 
                     <p> - The links below offer an overview of my skills and resume.</p>
                     <div className="flex md:inline md:space-x-10 justify-center space-x-20 underline text-sm mx-3">
-                        <Link href="/#Expertise" className="">My Skill</Link>
-                        <Link href="/resume" className="">Resume</Link>
+                        <Link href="/#Expertise" className="font-semibold">My Skill</Link>
+                        <Link href="/resume" className="font-semibold">Resume</Link>
                     </div>
                 </div>
             </div>
 
             <div className="flex flex-col mt-16 ">
-                    <h2 className="text-4xl opacity-90 text-center">Here's a bit about me</h2>
-                    <ul className="font-extralight opacity-75 w-2/5 mx-auto">
-                        <li> - I'm 22 years old.</li>
-                        <li> - I have over 1.6 years of experience in full-stack development.</li>
-                        <li> - I recently completed my Bachelor's in Information Technology Engineering with a CGPA of 8.56 in 2023.</li>
-                        <li> - I am currently working at Aspire Soft Serv in Ahmedabad.</li>
-                    </ul>
-                </div>
+                <h2 className="text-4xl opacity-90">Here's a bit about me</h2>
+                <ul className="opacity-75 ml-0 leading-7">
+                    <li> - I'm 22 years old.</li>
+                    <li> - I have over <b className="opacity-1000"> 1.6 years of experience </b>in full-stack development.</li>
+                    <li> - I recently completed my Bachelor's in <i>Information Technology Engineering</i> with a CGPA of <b>8.56</b> in 2023.</li>
+                    <li> - I am currently working at <b>Aspire SoftServ pvt ltd.</b> in Ahmedabad.</li>
+                    <li> - I'm currently working on this project <IconArrowRight className="inline w-4"/> <Link href="https://qa.liquidox.com" className="underline">qa.liquidox.com</Link>.</li>
+                    <li> - we have use this technologies Next.js, GraphQL, Strapi, Postman, TypeScript and Tailwind CSS.</li>
+                </ul>
+
+            </div>
         </div >
     );
 }

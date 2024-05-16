@@ -84,7 +84,7 @@ export function FooterCardDemo() {
           </div>
         </footer>
 
-        <span className="bottom-0 text-xs text-neutral-500 absolute w-full text-center translate-y-10">©2024, All Rights Reserved.</span>
+        <span className="bottom-0 text-xs text-neutral-500 absolute w-full text-center translate-y-10 tracking-widest">{`©Made  With  </>  by  Miten.  2024`}</span>
       </div>
     </div>
   );
