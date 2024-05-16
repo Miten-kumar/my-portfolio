@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
-import cardImage from "../../../public/graph.svg"
+import cardImage from "../../../public/blob.svg"
 import profile_Image from "../../../public/SideImage.png"
 import { motion } from "framer-motion"
 
@@ -23,10 +23,10 @@ export function ThreeDCardDemo() {
         ease: [0.4, 0.0, 0.2, 1],
       }} >
       <CardContainer className="inter-var">
-        <CardItem translateZ="100" className=" relative items-center flex justify-center">
-          <Image src={cardImage} className="z-0 absolute rounded-xl lg:h-96 w-96 h-72 group-hover/card:shadow-xl text-center " alt="thumbnail" />
+        <CardItem translateZ="100" className=" relative items-center flex justify-center ">
+          <Image src={cardImage} className="-z-10 absolute rounded-xl w-96 mt-10 group-hover/card:shadow-xl right-0 left-4 text-center " alt="thumbnail" />
 
-          <Image src={profile_Image} className=" absolute lg:h-96 h-72 w-64 rounded-xl group-hover/card:shadow-xl " alt="thumbnail" />
+          <Image src={profile_Image} className=" absolute lg:h-96 h-72 width-card rounded-xl group-hover/card:shadow-xl " alt="thumbnail" />
         </CardItem>
       </CardContainer>
     </motion.div>

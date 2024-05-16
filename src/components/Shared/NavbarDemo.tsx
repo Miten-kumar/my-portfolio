@@ -4,14 +4,9 @@ import Link from "next/link"
 import { useState } from "react";
 import menubar from "../../../public/interface.png"
 import logo from "../../../public/logo-two.png"
-import about from "../../../public/about.png"
-import skills from "../../../public/skills.png"
-import work from "../../../public/working.png"
-import resume from "../../../public/resume.png"
-import contact from "../../../public/customer-service.png"
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { IconUserCircle, IconDeviceDesktopAnalytics, IconScript, IconMessages, IconCode } from "@tabler/icons-react";
+import { IconUserCircle, IconScript, IconMessages, IconCode, IconDeviceLaptop } from "@tabler/icons-react";
 
 
 
@@ -92,7 +87,7 @@ export function NavbarDemo() {
           </Link >
           <Separator orientation="vertical" />
           <Link href='/#projects' className="font-light">
-            <IconDeviceDesktopAnalytics className="mx-auto" />
+            <IconDeviceLaptop className="mx-auto" />
             Work
           </Link >
           <Separator orientation="vertical" />
@@ -107,31 +102,6 @@ export function NavbarDemo() {
           </Link >
         </div>
       </div>
-      {/* <div className={`w-full mx-auto flex justify-center rounded-t-[4rem] items-center fixed md:hidden bottom-0 right-0 backdrop-blur-3xl z-20 transition-all   duration-300 transform ${isOpen ? "opacity-100 -translate-y-0 " : "opacity-100"}`}>
-        <div className="flex flex-col gap-5  my-5 ">
-          <Link href="" className="font-light text-xl flex items-end ">
-          <IconUserCircle className="mx-2 flex" size={24} />
-            About
-          </Link >
-          <Link href='/#Expertise' className="font-light flex  items-end text-xl">
-            <IconCode className="mx-2" size={24} />
-            Skills
-          </Link >
-          <Link href='/#projects' className="font-light flex items-end text-xl">
-            <IconDeviceDesktopAnalytics className="mx-2" size={24} />
-            Work
-          </Link >
-          <Link href='' className="font-light flex items-end text-xl">
-            <IconScript className="mx-2 items-end" size={24} />
-            Resume
-          </Link >
-          <Link href='/contact' className="font-light  text-xl flex items-end">
-            <IconMessages className="mx-2" size={24} />
-            contact
-          </Link >
-
-        </div>
-      </div> */}
-    </>
+        </>
   )
 }
