@@ -52,18 +52,26 @@ export function AboutUsDemo() {
                     </div>
                 </div>
             </div>
-
-            <div className="flex flex-col mt-16 ">
-                <h2 className="text-4xl opacity-90">Here's a bit about me</h2>
-                <ul className="opacity-75 ml-0 leading-7">
-                    <li> - I'm 22 years old.</li>
-                    <li> - I have over <b className="opacity-1000"> 1.6 years of experience </b>in full-stack development.</li>
-                    <li> - I recently completed my Bachelor's in <i>Information Technology Engineering</i> with a CGPA of <b>8.56</b> in 2023.</li>
-                    <li> - I am currently working at <b>Aspire SoftServ pvt ltd.</b> in Ahmedabad.</li>
-                    <li> - I'm currently working on this project <IconArrowRight className="inline w-4"/> <Link href="https://qa.liquidox.com" className="underline">qa.liquidox.com</Link>.</li>
-                    <li> - we have use this technologies Next.js, GraphQL, Strapi, Postman, TypeScript and Tailwind CSS.</li>
-                </ul>
-
+            <div className="grid md:grid-cols-2 grid-cols-1 mt-10 lg:h-[600px] lg:gap-0 gap-3">
+                <div className=" ">
+                    <h2 className="md:text-2xl text-xl">Here's a bit About Me</h2>
+                    <ul className="opacity-75 ml-0 leading-7">
+                        <li>- I'm always learning and improving.</li>
+                        <li>- My perspective on websites has changed a lot.</li>
+                        <li>- I make myself available for work 24/7 and prioritize my job.</li>
+                    </ul>
+                </div>
+                <div className="flex justify-end flex-col">
+                    <h2 className="md:text-2xl text-xl">Here's a More About Me</h2>
+                    <ul className="opacity-75 ml-0 leading-7">
+                        <li> - I'm 22 years old.</li>
+                        <li> - I have over <b className="opacity-1000"> 1.6 years of experience </b>in full-stack development.</li>
+                        <li> - I recently completed my Bachelor's in <i>Information Technology Engineering</i> with a CGPA of <b>8.56</b> in 2023.</li>
+                        <li> - I am currently working at <b>Aspire SoftServ pvt ltd.</b> in Ahmedabad.</li>
+                        <li> - I'm currently working on this project <IconArrowRight className="inline w-4" /> <Link target="_blank" href="https://qa.liquidox.com" className="underline">qa.liquidox.com</Link>.</li>
+                        <li> - we have use these technologies Next.js, GraphQL, Strapi, Postman, TypeScript, and Tailwind CSS.</li>
+                    </ul>
+                </div>
             </div>
         </div >
     );

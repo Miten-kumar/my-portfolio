@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Meteors } from "../ui/meteors";
 import Link from "next/link";
@@ -27,11 +28,11 @@ export function FooterCardDemo() {
               <div className="flex  flex-col gap-2 w-7/12 lg:w-1/2 mx-auto lg:justify-start lg:items-start justify-center items-center">
                 <h5 className="font-semibold lg:mb-5 mb-2 tracking-widest text-md">Site Links</h5>
                 <div className="flex lg:flex-col lg:gap-2 gap-4 font-light text-neutral-400 text-sm">
+                  <Link href="#Expertise " > Skills</Link>
+                  <Link href="#projects" > Projects</Link>
                   <Link href="/about" >About</Link>
                   <Link href="/resume" > Resume</Link>
                   <Link href="" > Blogs</Link>
-                  <Link href="#Expertise " > Skills</Link>
-                  <Link href="#projects" > Projects</Link>
                 </div>
               </div>
 

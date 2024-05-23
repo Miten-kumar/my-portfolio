@@ -24,18 +24,7 @@ export function TypewriterEffectSmoothDemo() {
     },
   ];
   return (
-    <motion.div initial={{
-      opacity: 0,
-      x: 20,
-    }}
-      animate={{
-        opacity: 1,
-        x: [-30, 0, 0],
-      }}
-      transition={{
-        duration: 2,
-        ease: [0.4, 0.0, 0.2, 1],
-      }}>
+
       <div className="flex flex-col items-center justify-end h-min mt-5">
 
         <TypewriterEffectSmooth words={words} />
@@ -45,6 +34,5 @@ export function TypewriterEffectSmoothDemo() {
         </p>
         <ContectTooltipDemo />
       </div>
-    </motion.div>
   );
 }

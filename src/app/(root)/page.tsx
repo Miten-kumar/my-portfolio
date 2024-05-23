@@ -11,13 +11,14 @@ import { NavbarDemo } from "@/components/Shared/NavbarDemo";
 export default function Home() {
   return (
     <>
-    <div className="md:max-w-[1460px] w-full mx-auto">
+      <div className="md:max-w-[1460px] w-full mx-auto">
 
-      <Herosection />
-      <SkillSection />
-      <ProjectSection />
-      <FooterCard />
-    </div>
+        <Herosection />
+        <SkillSection />
+        <ProjectSection />
+        <FooterCard />
+
+      </div>
     </>
   )
 }

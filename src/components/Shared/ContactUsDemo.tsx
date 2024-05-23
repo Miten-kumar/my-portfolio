@@ -11,16 +11,21 @@ import twitter from "../../../public/twitter.png"
 import Image from "next/image";
 import { Separator } from "../ui/Separator";
 import Link from "next/link";
+import { IconArrowLeft } from "@tabler/icons-react";
+import { useRouter } from "next/navigation";
 
 export function ContactUsDemo() {
+    const router = useRouter()
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log("Form submitted");
+
     };
     return (
+
         <>
-            <div className="lg:grid  grid-cols-2 flex flex-col h-screen  lg:justify-around justify-center items-center mx-auto height-full">
-                <div className="border  md:w-10/12 w-11/12 p-4 mx-auto md:rounded-2xl z-10 shadow-input md:my-20 flex flex-col items-center justify-center overflow-scroll rounded-md">
+            
+            <div className="lg:grid  grid-cols-2 flex flex-col my-5 lg:justify-around justify-center items-center mx-auto">
+                <div className="border  md:w-10/12 w-11/12 p-4 mx-auto md:rounded-2xl z-10 shadow-input m-0 flex flex-col items-center justify-center overflow-scroll rounded-md">
                     <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200 pt-4">
                         Let's Chat, Reach Out to Me!
                     </h2>
@@ -55,60 +60,31 @@ export function ContactUsDemo() {
                         </button>
                     </form>
                 </div>
-                {/* <div className="text-center w-full mx-auto">
-                    <h4 className="text-neutral-300 font-normal flex lg:hidden py-10 justify-center items-center tracking-wider">Ready to talk? Send me a message..</h4>
-                    <h4 className="text-neutral-300 font-normal lg:w-11/12 w-full mx-auto lg:flex hidden">Curious about something? Just shoot me a message on any of my social media platforms.</h4>
-                    <div className="grid grid-cols-4 text-sm md:py-10 py-0 lg:w-2/3 w-9/12 mx-auto">
-                        <div className="flex justify-around items-center">
-                            <Link href="https://github.com/mitenkumar" target="_blank">
-                                <Image src={github} alt="no-image" className="object-cover !m-0 !p-0 object-top cursor-pointer h-14 w-14  hover:scale-110 hover:rotate-45 relative transition duration-500 mx-auto" />
-                            </Link>
-                            <Separator orientation="vertical" className="h-10" />
-                        </div>
-                        <div className="flex justify-around items-center">
-                            <Link href="https://www.instagram.com/miten_02/" target="_blank">
-                                <Image src={instagram} alt="no-image" className="object-cover !m-0 !p-0 object-top cursor-pointer h-14 w-14  hover:scale-110 hover:-rotate-45 relative transition duration-500 mx-auto" />
-                            </Link>
-                            <Separator orientation="vertical" className="h-10" />
-                        </div>
-                        <div className="flex justify-around items-center">
-                            <Link href="https://www.linkedin.com/in/miten-patel-8939571b2/" target="_blank">
-                                <Image src={linkedin} alt="no-image" className="object-cover !m-0 !p-0 object-top cursor-pointer h-14 w-14  hover:scale-110 hover:rotate-45 relative transition duration-500 mx-auto" />
-                            </Link>
-                            <Separator orientation="vertical" className="h-10" />
-                        </div>
-                        <div className="flex justify-around items-center">
-                            <Link href="https://maps.app.goo.gl/hxd1M2zPHjEN8g2p9" target="_blank">
-                                <Image src={location} alt="no-image" className="object-cover !m-0 !p-0 object-top cursor-pointer h-14 w-14  hover:scale-110 hover:-rotate-45 relative transition duration-500 mx-auto" />
-                            </Link>
-                            <div></div>
-                        </div>
-                    </div>
-                </div> */}
+
                 <div className=" md:w-10/12 w-11/12 mx-auto">
                     <h2 className="text-center text-4xl lg:block hidden">Click. Chat. Connect.</h2>
                     <h4 className="text-center md:my-10 my-5 lg:hidden block tracking-wide font-normal">Need help? Message me directly</h4>
                     <h4 className="text-center my-10 lg:block hidden tracking-wide font-normal">Curious about something? Just shoot me a message on any of my social media platforms.</h4>
-                    <div className="w-full md:my-10 ">
+                    <div className="w-full md:my-10 tracking-wider">
                         <div className="flex space-x-4 text-xs cursor-pointer justify-center items-center">
                             <Link href="https://github.com/mitenkumar" target="_blank" className="transition-all duration-500 flex justify-center  flex-col items-center">
-                                <Image src={github} alt="no-image" className="object-cover object-top cursor-pointer h-10 w-10 relative transition duration-500 mx-auto" />
+                                <Image src={github} alt="no-image" className="object-cover object-top cursor-pointer h-9 w-9 relative transition duration-500 mx-auto" />
                                 <label className="py-1 mx-auto">Github</label>
                             </Link>
                             <Separator orientation="vertical" className="h-10 flex items-center justify-center mb-4" />
                             <Link href="https://www.instagram.com/miten_02/" target="_blank" className="transition-all duration-500 flex justify-center  flex-col items-center">
-                                <Image src={instagram} alt="no-image" className="object-cover object-top cursor-pointer h-10 w-10 relative transition duration-500 mx-auto" />
+                                <Image src={instagram} alt="no-image" className="object-cover object-top cursor-pointer h-9 w-9 relative transition duration-500 mx-auto" />
                                 <label className="py-1 mx-auto">Instagram</label>
                             </Link>
                             <Separator orientation="vertical" className="h-10 flex items-center justify-center mb-4" />
 
                             <Link href="https://www.linkedin.com/in/miten-patel-8939571b2/" target="_blank" className="transition-all duration-500 flex justify-center  flex-col items-center">
-                                <Image src={linkedin} alt="no-image" className="object-cover object-top cursor-pointer h-10 w-10 relative transition duration-500 mx-auto" />
+                                <Image src={linkedin} alt="no-image" className="object-cover object-top cursor-pointer h-9 w-9 relative transition duration-500 mx-auto" />
                                 <label className="py-1 mx-auto">LinkedIn</label>
                             </Link>
                             <Separator orientation="vertical" className="h-10 flex items-center justify-center mb-4" />
                             <Link href="https://twitter.com/miten03" target="_blank" className=" transition-all duration-500 flex  flex-col">
-                                <Image src={twitter} alt="no-image" className="object-cover object-top cursor-pointer h-10 hover:rotate-45 w-10 relative transition duration-500 mx-auto" />
+                                <Image src={twitter} alt="no-image" className="object-cover object-top cursor-pointer w-9 h-9 hover:rotate-45  relative transition duration-500 mx-auto" />
                                 <label className="py-1 mx-auto">Twitter</label>
                             </Link>
                         </div>

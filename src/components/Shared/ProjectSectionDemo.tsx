@@ -18,7 +18,7 @@ import { LiaExternalLinkAltSolid } from "react-icons/lia";
 
 export function ProjectSectionDemo() {
     return (
-        <TracingBeam className="px-6 mt-14" >
+        <TracingBeam className="px-6 mt-14 " >
             <h2 className="text-center text-2xl tracking-[6px] text-white relative " id="projects">MY PROJECTS </h2>
             <div className="max-w-2xl mx-auto antialiased pt-4 relative" >
                 {dummyContent.map((item, index) => (
