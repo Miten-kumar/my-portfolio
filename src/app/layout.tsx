@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/provider/theme-provider";
 import { NavbarDemo } from "@/components/Shared/NavbarDemo";
 import FooterCard from "./(root)/_homepage-components/FooterCard";
+import { NotificationProvider } from "@/components/provider/NotificationContext";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,8 +24,10 @@ export default function RootLayout({
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+        <NotificationProvider>
           <NavbarDemo />
           {children}
+        </NotificationProvider>
         </ThemeProvider>
       </body>
     </html>

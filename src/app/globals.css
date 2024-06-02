@@ -158,7 +158,9 @@ body,
     border-radius: 21px;
     background: linear-gradient(179deg, #424599 1.09%, #393B70 100.54%);
   }
-
+  .Toastify__toast--success {
+    background-color: cyan !important;
+}
   .waitlist-background {
     border-radius: 22px;
     background: linear-gradient(179deg, #424599 1.09%, #393B70 100.54%);
@@ -436,8 +438,36 @@ ul {
 
 body ::selection {
   background: cyan;
-  /* Change this to your desired color */
   color: #24262b;
-  /* Optional: Change the text color */
   user-select: none;
+}
+
+.Toastify__toast {
+  border-radius: 5px !important;
+  min-height: 20px !important; /* Smaller height */
+}
+
+.Toastify__toast-container--top-right {
+  top: 60px !important
+}
+@media (max-width: 600px) {
+  .toast-container {
+      font-size: 0.8rem; /* Smaller font size */
+      width: 65% !important; /* Smaller width */
+      margin: 0 auto; /* Center on the screen */
+  }
+  .Toastify__toast {
+      border-radius: 5px !important;
+      min-height: 20px !important; /* Smaller height */
+  }
+  .Toastify__toast-body {
+      font-size: 0.8rem ; /* Smaller text */
+  }
+
+  .Toastify__toast-container--top-right {
+    top: 60px !important; /* Adjust top position if needed */
+    right: 90% !important; /* Center on the screen */
+    transform: translateX(50%) !important;
+}
+
 }
