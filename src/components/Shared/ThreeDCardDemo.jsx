@@ -5,7 +5,6 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import cardImage from "../../../public/blob.svg"
 import profile_Image from "../../../public/SideImage.png"
-import { motion } from "framer-motion"
 
 export function ThreeDCardDemo() {
   return (

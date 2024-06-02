@@ -14,9 +14,11 @@ import Link from "next/link";
 import { IconHeartHandshake, IconSquareRoundedCheck } from "@tabler/icons-react";
 import { useNotification } from "../provider/NotificationContext";
 import LoadingButton from "./LoadingButton";
+import { useRouter } from "next/navigation";
 
 export function ContactUsDemo() {
     const { notify } = useNotification();
+    const router = useRouter()
     const [isUserLoading, setIsUserLoading] = useState<boolean>(false);
 
     const [formData, setFormData] = useState({
@@ -69,8 +71,11 @@ export function ContactUsDemo() {
                 notify("Thank's for submitting the form!", 'success', { icon: <IconSquareRoundedCheck size={24} className='inline-flex' /> });
 
                 setTimeout(() => {
-                    notify(" I'll get back to you soon.", 'success', { icon: <IconHeartHandshake size={24} className="inline-flex" /> });
-                }, 4500);
+                    router.push('/');
+                    setTimeout(() => {
+                        notify("I'll get back to you soon.", 'success', { icon: <IconHeartHandshake size={24} className="inline-flex" /> });
+                    }, 2000); 
+                }, 4000)
 
                 setFormData({
                     firstname: "",
@@ -89,7 +94,7 @@ export function ContactUsDemo() {
     };
 
     return (
-        <div className="lg:grid grid-cols-2 flex flex-col my-5 lg:justify-around justify-center items-center mx-auto">
+        <div className="lg:grid grid-cols-2 flex flex-col my-5 pb-10 lg:justify-around justify-center items-center mx-auto">
             <div className="border md:w-10/12 w-11/12 p-4 mx-auto md:rounded-2xl z-10 shadow-input m-0 flex flex-col items-center justify-center overflow-scroll rounded-md">
                 <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200 pt-4">
                     Let's Chat, Reach Out to Me!
@@ -103,7 +108,7 @@ export function ContactUsDemo() {
                             <Label htmlFor="firstname">First name*</Label>
                             <Input
                                 id="firstname"
-                                name="firstname" 
+                                name="firstname"
                                 placeholder="Tyler"
                                 type="text"
                                 value={formData.firstname}
@@ -115,7 +120,7 @@ export function ContactUsDemo() {
                             <Label htmlFor="lastname">Last name</Label>
                             <Input
                                 id="lastname"
-                                name="lastname" 
+                                name="lastname"
                                 placeholder="Durden"
                                 type="text"
                                 value={formData.lastname}
@@ -127,7 +132,7 @@ export function ContactUsDemo() {
                         <Label htmlFor="email">Email Address*</Label>
                         <Input
                             id="email"
-                            name="email" 
+                            name="email"
                             placeholder="projectmayhem@fc.com"
                             type="email"
                             value={formData.email}
@@ -139,7 +144,7 @@ export function ContactUsDemo() {
                         <Label htmlFor="description">What Can I Help With You?*</Label>
                         <Textarea
                             id="description"
-                            name="description" 
+                            name="description"
                             placeholder="Write the purpose of contacting me..."
                             value={formData.description}
                             onChange={handleInputChange}
@@ -160,7 +165,7 @@ export function ContactUsDemo() {
 
             <div className="md:w-10/12 w-11/12 mx-auto">
                 <h2 className="text-center text-4xl lg:block hidden">Click. Chat. Connect.</h2>
-                <h4 className="text-center md:my-10 my-5 lg:hidden block tracking-wide font-normal">Need help? Message me directly</h4>
+                <h4 className="text-center md:my-10 my-5 text-base lg:hidden block tracking-wide font-normal">Need help? Message me directly</h4>
                 <h4 className="text-center my-10 lg:block hidden tracking-wide font-normal">Curious about something? Just shoot me a message on any of my social media platforms.</h4>
                 <div className="w-full md:my-10 tracking-wider">
                     <div className="flex space-x-4 text-xs cursor-pointer justify-center items-center">

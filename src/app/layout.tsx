@@ -10,8 +10,8 @@ import { NotificationProvider } from "@/components/provider/NotificationContext"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Animation",
-  description: "Miten Patel - Full stack Developer ",
+  title: "Miten | Full Stack Web Developer",
+  description: "Explore the portfolio of Miten Patel, a skilled Full Stack Developer specializing in modern web application development. Discover projects, skills, and get in touch.",
 };
 
 export default function RootLayout({

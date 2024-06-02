@@ -2,7 +2,6 @@
 import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
 import { ContectTooltipDemo } from "./ContectTooltipDemo";
 import { HeroHighlightDemo } from "./HeroHighlightDemo";
-import { motion } from "framer-motion";
 
 export function TypewriterEffectSmoothDemo() {
   const words = [

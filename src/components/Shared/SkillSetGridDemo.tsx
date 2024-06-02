@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 import { IconBoxAlignRightFilled, IconGitBranch, IconDatabase, IconBrandGraphql, IconBrandGoogleAnalytics, IconBrandCss3, IconBrandNextjs, IconBrandNodejs } from "@tabler/icons-react";
@@ -25,7 +24,6 @@ import docker from "../../../public/docker.png"
 import strapi from "../../../public/stapiVector.png"
 import typescript from "../../../public/typescript.png"
 import postman from "../../../public/postman.png"
-import { SparklesCore } from "../ui/sparkles";
 export function SkillSetGridDemo() {
     return (
         <>

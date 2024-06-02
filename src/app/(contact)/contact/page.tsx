@@ -8,7 +8,7 @@ export default function contect() {
     return (
         <div className="md:max-w-[1460px] w-full mx-auto height-full">
             <span className="opacity-90 cursor-pointer" onClick={() => router.replace('/')}>
-                    <IconArrowLeft className="md:mx-28 mx-10"/>
+                    <IconArrowLeft className="md:mx-16 mx-10"/>
                 </span>
             <ContactUsDemo />
         </div>

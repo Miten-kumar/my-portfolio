@@ -1,6 +1,5 @@
 
 import React from "react";
-import { Meteors } from "../ui/meteors";
 import Link from "next/link";
 import logo from "../../../public/logo-two.png"
 import Image from "next/image";
