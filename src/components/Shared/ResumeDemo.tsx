@@ -5,16 +5,38 @@ import { Separator } from "../ui/Separator";
 import { IconAward } from "@tabler/icons-react";
 import { useRouter } from "next/navigation";
 import { IconArrowLeft, IconBrandGithub, IconBrandLinkedin, IconMapPin, IconPhone, IconMail, IconSchool, IconCode, IconLink, IconDeviceLaptop } from "@tabler/icons-react";
+import { IconDownload } from "@tabler/icons-react";
 
 
 export function ResumeDemo() {
     const router = useRouter()
+    const handleDownload = async (e: React.MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault(); // Prevent default button behavior
+        console.log('Download button clicked');
+        try {
+          const response = await fetch('/miten_resume.pdf');
+          console.log('File fetched successfully');
+          const blob = await response.blob();
+          const url = window.URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = url;
+          link.setAttribute('download', 'miten_resume.pdf');
+          router.push('/resume')
+          document.body.appendChild(link);
+          link.click();
+          link.parentNode?.removeChild(link);
+          window.URL.revokeObjectURL(url);
+        } catch (error) {
+          console.error('Error downloading the file:', error);
+        }
+      };
     return (
         <div className="md:w-10/12 w-11/12 mx-auto md:tracking-wide tracking-normal opacity-90 pb-1">
-            <span className=" cursor-pointer" onClick={() => router.replace('/')}>
+            <span className=" cursor-pointer flex justify-between" onClick={() => router.replace('/')}>
                 <IconArrowLeft />
+                <button onClick={handleDownload} className="text-sm mx-6"><IconDownload className="inline mr-2 mb-1" size={20}/>Download PDF</button>
             </span>
-            <div className="md:p-3 p-2 border my-10 overflow-y-scroll">
+            <div className="md:p-3 p-2 border rounded-md my-10 overflow-y-scroll">
                 <h1 className="sm:text-center text-center md:text-3xl text-xl font-normal mt-5 cursor-pointer" onClick={() => router.replace('/about')}>Patel Mitenkumar Mukeshbhai</h1>
                 <div className="sm:flex block space-y-4 sm:space-y-0 space-x-0 sm:space-x-2 md:space-x-4 cursor-pointer text-xs md:text-sm md:mt-20 mt-10 md:mb-2 mb-5 justify-center items-center ">
                     <Link href="https://maps.app.goo.gl/hxd1M2zPHjEN8g2p9" target="_blank" className="block">Navsari <IconMapPin className="inline mb-0.5" size={16} /></Link >

@@ -54,6 +54,7 @@ export async function POST(req: Request) {
                         Software Developer<br/>
                         M: +91 95100 39054<br/>
                         E: mitenpate1234gmail.com<br/>
+                        W: <a href="https://my-portfolio-kappa-bay.vercel.app/" style="color: #007bff;">miten-patel-portfolio.vercel.com</a><br/>
                         </p>                     
                     </div>
                 `

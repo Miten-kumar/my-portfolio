@@ -11,7 +11,7 @@ export function FooterCardDemo() {
   return (
     <div className="mt-20">
       <div className="w-full mx-auto h-full relative z-10">
-        <footer className="footer ">
+        <footer className="footer md:py-16 py-3">
           <SparklesCore
             background="transparent"
             minSize={0.4}
@@ -23,7 +23,7 @@ export function FooterCardDemo() {
 
           <div className="grid lg:grid-cols-5 grid-cols-1 w-11/12 mx-auto">
             <Image src={logo} alt="no-icon" className="h-24 w-44 mx-auto md:object-cover object-contain md:my-0 my-5"></Image>
-            <div className="col-span-4 grid lg:grid-cols-3  grid-cols-1 md:justify-start md:items-start justify-center  items-center">
+            <div className="col-span-4 grid lg:grid-cols-3  grid-cols-1 md:justify-start md:items-start justify-center  items-center sm:mb-5 mb-10 ">
               <div className="flex  flex-col gap-2 w-7/12 lg:w-1/2 mx-auto lg:justify-start lg:items-start justify-center items-center">
                 <h5 className="font-semibold lg:mb-5 mb-2 tracking-widest text-md">Site Links</h5>
                 <div className="flex lg:flex-col lg:gap-2 gap-4 font-light text-neutral-400 text-sm">
@@ -31,7 +31,7 @@ export function FooterCardDemo() {
                   <Link href="#projects" > Projects</Link>
                   <Link href="/about" >About</Link>
                   <Link href="/resume" > Resume</Link>
-                  <Link href="" > Blogs</Link>
+                  <Link href="/contact" > Contact</Link>
                 </div>
               </div>
 
@@ -84,7 +84,7 @@ export function FooterCardDemo() {
           </div>
         </footer>
 
-        <span className="bottom-0 text-xs text-neutral-500 absolute w-full text-center translate-y-10 tracking-widest">{`©Made  With  </>  by  Miten.  2024`}</span>
+        <span className="bottom-4  md:bottom-0 my-5 md:my-0 text-xs text-neutral-500 absolute w-full text-center translate-y-10 tracking-widest">{`©Made  With  </>  by  Miten.  2024`}</span>
       </div>
     </div>
   );

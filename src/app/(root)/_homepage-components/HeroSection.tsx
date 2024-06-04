@@ -7,7 +7,7 @@ export default function Herosection() {
   const router = useRouter()
   return (
 
-    <div className=" lg:h-[650px] h-svh ">
+    <div className=" lg:h-[650px] h-[850px] ">
       <div className="lg:grid grid-cols-2 flex flex-col mx-auto items-center lg:h-full w-11/12">
         <div className="order-2 lg:order-1">
           <TypewriterEffectSmoothDemo />
