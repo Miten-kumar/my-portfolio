@@ -158,9 +158,11 @@ body,
     border-radius: 21px;
     background: linear-gradient(179deg, #424599 1.09%, #393B70 100.54%);
   }
+
   .Toastify__toast--success {
     background-color: cyan !important;
-}
+  }
+
   .waitlist-background {
     border-radius: 22px;
     background: linear-gradient(179deg, #424599 1.09%, #393B70 100.54%);
@@ -331,10 +333,18 @@ ul {
   list-style: none;
 }
 
-.footer {
-  background: radial-gradient(80.10000000000001% 50% at 50% 0%, rgba(38, 140, 245, .25) 0%, rgba(38, 140, 245, 0) 100%);
 
+.footer {
+  background: radial-gradient(50% 60% at 50% 0%, rgba(38, 140, 245, 0.25) 0%, rgba(38, 140, 245, 0) 100%);
 }
+
+@media(max-width: 767px) {
+  .footer{
+    background: radial-gradient(80.10000000000001% 50% at 50% 0%, rgba(38, 140, 245, .25) 0%, rgba(38, 140, 245, 0) 100%);
+  }
+}
+
+
 
 .footer-col {
   width: 25%;
@@ -416,9 +426,11 @@ ul {
     width: 100%;
   }
 }
-.width-card{
+
+.width-card {
   width: 20rem;
 }
+
 .instagram_icon:hover {
   filter: invert(100%) drop-shadow(1px 1px 1px #e00205) drop-shadow(0 0 10px #f00088);
 }
@@ -443,30 +455,41 @@ body ::selection {
 
 .Toastify__toast {
   border-radius: 5px !important;
-  min-height: 20px !important; /* Smaller height */
+  min-height: 20px !important;
+  /* Smaller height */
 }
 
 .Toastify__toast-container--top-right {
   top: 60px !important
 }
+
 @media (max-width: 600px) {
   .toast-container {
-      font-size: 0.8rem; /* Smaller font size */
-      width: 65% !important; /* Smaller width */
-      margin: 0 auto; /* Center on the screen */
+    font-size: 0.8rem;
+    /* Smaller font size */
+    width: 65% !important;
+    /* Smaller width */
+    margin: 0 auto;
+    /* Center on the screen */
   }
+
   .Toastify__toast {
-      border-radius: 5px !important;
-      min-height: 20px !important; /* Smaller height */
+    border-radius: 5px !important;
+    min-height: 20px !important;
+    /* Smaller height */
   }
+
   .Toastify__toast-body {
-      font-size: 0.8rem ; /* Smaller text */
+    font-size: 0.8rem;
+    /* Smaller text */
   }
 
   .Toastify__toast-container--top-right {
-    top: 60px !important; /* Adjust top position if needed */
-    right: 90% !important; /* Center on the screen */
+    top: 60px !important;
+    /* Adjust top position if needed */
+    right: 90% !important;
+    /* Center on the screen */
     transform: translateX(50%) !important;
-}
+  }
 
 }

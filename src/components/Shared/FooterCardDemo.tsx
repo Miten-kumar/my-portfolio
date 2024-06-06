@@ -76,7 +76,7 @@ export function FooterCardDemo() {
                 {/* <h4 className=" mb-5">Let&apos;s Getting Touch</h4> */}
                 <p className="font-normal text-lg text-slate-500 mb-4 relative ">
                   Let's brew something great together!              </p>
-                <Link href="/contact" className="border px-2 py-1 w-32 rounded-lg  border-gray-500 text-neutral-400">
+                <Link href="/contact" className="border text-center px-2 py-1 w-32 rounded-lg  border-gray-500 text-neutral-400">
                   Get In Touch
                 </Link>
               </div>
