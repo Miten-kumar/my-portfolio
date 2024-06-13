@@ -493,3 +493,19 @@ body ::selection {
   }
 
 }
+
+/* Add this to your main stylesheet */
+.link {
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.link:hover {
+  transform: scale(1.2);
+  filter: none;
+  z-index: 1;
+}
+
+
+.navbar:hover .link:not(:hover) {
+  filter: blur(1px);
+}

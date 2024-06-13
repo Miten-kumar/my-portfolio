@@ -45,24 +45,24 @@ export function AboutUsDemo() {
 
                     <p>When I'm not on the computer, I love spending time with family and pets. Gardening is my passion; I enjoy growing new and interesting plants, learning about their growth, and marveling at their beauty. It's a soothing hobby that keeps me connected to the natural world's wonders.</p>
 
-                    <p> - The links below offer an overview of my skills and resume.</p>
-                    <div className="flex md:inline md:space-x-10 justify-center space-x-20 underline text-sm mx-3">
-                        <Link href="/#Expertise" className="font-semibold">My Skill</Link>
-                        <Link href="/resume" className="font-semibold">Resume</Link>
+                    <p className="md:pb-5 pb-0"> - The links below offer an overview of my skills and resume.</p>
+                    <div className="flex md:inline md:space-x-10 md:justify-center justify-start space-x-20  text-sm mx-3">
+                        <Link href="/#Expertise" className=" border-b-2 border-portfolio-cyan rounded-md py-2 px-2">My Skill</Link>
+                        <Link href="/resume" className=" border-b-2 border-portfolio-cyan rounded-md py-2 px-2">Resume</Link>
                     </div>
                 </div>
             </div>
             <div className="grid md:grid-cols-2 grid-cols-1 mt-10 lg:h-[600px] lg:gap-0 gap-3">
-                <div className=" ">
-                    <h2 className="md:text-2xl text-xl">Here's a bit About Me</h2>
+                <div className="text-[15px] ">
+                    <h2 className="md:text-2xl text-lg">Here's a bit About Me</h2>
                     <ul className="opacity-75 ml-0 leading-7">
                         <li>- I'm always learning and improving.</li>
                         <li>- My perspective on websites has changed a lot.</li>
                         <li>- I make myself available for work 24/7 and prioritize my job.</li>
                     </ul>
                 </div>
-                <div className="flex justify-end flex-col">
-                    <h2 className="md:text-2xl text-xl">Here's a More About Me</h2>
+                <div className="flex justify-end flex-col text-[15px]">
+                    <h2 className="md:text-2xl text-lg">Here's a More About Me</h2>
                     <ul className="opacity-75 ml-0 leading-7">
                         <li> - I'm 22 years old.</li>
                         <li> - I have over <b className="opacity-1000"> 1.6 years of experience </b>in full-stack development.</li>

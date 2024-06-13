@@ -14,27 +14,27 @@ export function ResumeDemo() {
         e.preventDefault(); // Prevent default button behavior
         console.log('Download button clicked');
         try {
-          const response = await fetch('/miten_resume.pdf');
-          console.log('File fetched successfully');
-          const blob = await response.blob();
-          const url = window.URL.createObjectURL(blob);
-          const link = document.createElement('a');
-          link.href = url;
-          link.setAttribute('download', 'miten_resume.pdf');
-          router.push('/resume')
-          document.body.appendChild(link);
-          link.click();
-          link.parentNode?.removeChild(link);
-          window.URL.revokeObjectURL(url);
+            const response = await fetch('/miten_resume.pdf');
+            console.log('File fetched successfully');
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', 'miten_resume.pdf');
+            router.push('/resume')
+            document.body.appendChild(link);
+            link.click();
+            link.parentNode?.removeChild(link);
+            window.URL.revokeObjectURL(url);
         } catch (error) {
-          console.error('Error downloading the file:', error);
+            console.error('Error downloading the file:', error);
         }
-      };
+    };
     return (
         <div className="md:w-10/12 w-11/12 mx-auto md:tracking-wide tracking-normal opacity-90 pb-1">
             <span className=" cursor-pointer flex justify-between" onClick={() => router.replace('/')}>
                 <IconArrowLeft />
-                <button onClick={handleDownload} className="text-sm mx-6"><IconDownload className="inline mr-2 mb-1" size={20}/>Download PDF</button>
+                <button onClick={handleDownload} className="text-sm mx-6"><IconDownload className="inline mr-2 mb-1" size={20} />Download PDF</button>
             </span>
             <div className="md:p-3 p-2 border rounded-md my-10 overflow-y-scroll">
                 <h1 className="sm:text-center text-center md:text-3xl text-xl font-normal mt-5 cursor-pointer" onClick={() => router.replace('/about')}>Patel Mitenkumar Mukeshbhai</h1>
@@ -62,11 +62,11 @@ export function ResumeDemo() {
 
                 <hr className="my-10 w-11/12  " />
 
-                <h5>Experience <IconCode className="inline " size={18} /><span className="block mt-1 text-xs md:text-sm ">  ( 1 year 6 Mounth )</span> </h5>
+                <h5>Experience <IconCode className="inline " size={18} /><span className="block mt-1 text-xs md:text-sm ">  ( 1 year 4 Month )</span> </h5>
                 <div className="md:space-y-10 space-y-4 mt-10 text-xs md:text-sm">
                     <div className="flex my-14  flex-col">
                         <div className="md:flex grid grid-cols-1 justify-between  items-start ">
-                            <Link href="https://drive.google.com/file/d/1TQBWtBP44BjmHE2JnLAk6gIxzeYOdPT9/view" target="_blank" className="inline"> {`1) Internship - Twowits internship`}  <IconLink className="inline mb-1" size={18} /> <span className="block mt-1 mx-5">  ( 1 Mounth )</span> </Link>
+                            <Link href="https://drive.google.com/file/d/1TQBWtBP44BjmHE2JnLAk6gIxzeYOdPT9/view" target="_blank" className="inline"> {`1) Internship - Twowits internship`}  <IconLink className="inline mb-1" size={18} /> <span className="block mt-1 mx-5">  ( 1 Month )</span> </Link>
                             <div className="inline mt-5 ml-4 md:mr-0">dec 2021 - jan 2021 </div>
                         </div>
                         <ul className="md:mr-4 space-y-3 md:mt-8 mt-4 leading-5">
@@ -76,7 +76,7 @@ export function ResumeDemo() {
                     </div>
                     <div className="flex my-14  flex-col">
                         <div className="md:flex grid grid-cols-1 justify-between  items-start ">
-                            <Link className="inline" href='#'> {`2) Internship - Aspire SoftServ Pvt Ltd. `}  <IconLink className="inline mb-1" size={18} /> <span className="block mt-1  mx-5">  ( 6 Mounth )</span> </Link>
+                            <Link className="inline" href='#'> {`2) Internship - Aspire SoftServ Pvt Ltd. `}  <IconLink className="inline mb-1" size={18} /> <span className="block mt-1  mx-5">  ( 6 Month )</span> </Link>
                             <div className="inline mt-5 ml-4 md:mr-0">Feb 2023 - Aug 2023 </div>
                         </div>
                         <ul className="mr-4 md:mt-8 mt-4 space-y-3 leading-5">
@@ -84,18 +84,29 @@ export function ResumeDemo() {
                             <li> - I'm experienced in UI design, API calling, fetching data, CRUD operations with MongoDB, and authentication flow implementation.</li>
                         </ul>
                     </div>
-                    <div className="flex my-14  flex-col ">
-                        <div className="md:flex grid grid-cols-1 justify-between  items-start text-xs md:text-sm">
-                            <Link className="inline" href='https://qa.liquidox.com/' target="_blank" > {`3) LiquidOx - Aspire SoftServ Pvt Ltd. `}  <IconLink className="inline mb-1" size={18} /><span className="block mt-1 md:text-sm text-xs  mx-5">  ( 1 year )</span> </Link>
-                            <div className="inline mt-5 ml-4 md:mr-0"> After May 2023 <div className="h-1 w-1 rounded-full bg-white mr-0.5 animate-bounce transition-all delay-1000 inline-flex" /><div className="h-1 w-1 rounded-full bg-white animate-bounce transition-all delay-100 inline-flex mr-0.5" /><div className="h-1 w-1 rounded-full bg-white animate-bounce delay-300 transition-all inline-flex mr-0.5" /> </div>
+                    <div className="flex my-14 flex-col">
+                        <div className="md:flex grid grid-cols-1 justify-between items-start text-xs md:text-sm">
+                            <Link className="inline" href='https://qa.liquidox.com/' target="_blank">
+                                {`3) FinTech Website - Aspire SoftServ Pvt Ltd.`}
+                                <IconLink className="inline mb-1" size={18} />
+                                <span className="block mt-1 md:text-sm text-xs mx-5"> ( 1 year )</span>
+                            </Link>
+                            <div className="inline mt-5 ml-4 md:mr-0">
+                                After May 2023
+                                <div className="h-1 w-1 rounded-full bg-white mr-0.5 animate-bounce transition-all delay-1000 inline-flex" />
+                                <div className="h-1 w-1 rounded-full bg-white animate-bounce transition-all delay-100 inline-flex mr-0.5" />
+                                <div className="h-1 w-1 rounded-full bg-white animate-bounce delay-300 transition-all inline-flex mr-0.5" />
+                            </div>
                         </div>
                         <ul className="mr-4 md:mt-8 mt-4 space-y-3 leading-5">
-                            <li> - I'm currently working on Liquidox.</li>
+                            <li> - I'm currently working on a FinTech website using Next.js.</li>
                             <li> - Technologies I'm using include Next.js, GraphQL, TypeScript, and Tailwind CSS.</li>
+                            <li> - My role involves frontend development, third-party integrations, API calling, SSR, GraphQL handling, CMS management, and design implementation.</li>
                             <li> - I've contributed to third-party integrations for KYC and payment gateways.</li>
-                            <li> - I've also contributed to implemented authentication flows including Apple and Google SSO.</li>
+                            <li> - I've also contributed to implementing authentication flows including Apple and Google SSO.</li>
                         </ul>
                     </div>
+
                 </div>
 
                 <hr className="my-10 w-11/12  " />
