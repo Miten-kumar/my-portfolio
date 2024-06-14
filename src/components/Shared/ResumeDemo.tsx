@@ -34,7 +34,7 @@ export function ResumeDemo() {
         <div className="md:w-10/12 w-11/12 mx-auto md:tracking-wide tracking-normal opacity-90 pb-1">
             <span className=" cursor-pointer flex justify-between" onClick={() => router.replace('/')}>
                 <IconArrowLeft />
-                <button onClick={handleDownload} className="text-sm mx-6"><IconDownload className="inline mr-2 mb-1" size={20} />Download PDF</button>
+                <button onClick={handleDownload} className="text-sm mx-6 pb-2 border-b-2 border-portfolio-cyan rounded-md"><IconDownload className="inline mr-2 mb-1" size={20} />Download PDF</button>
             </span>
             <div className="md:p-3 p-2 border rounded-md my-10 overflow-y-scroll">
                 <h1 className="sm:text-center text-center md:text-3xl text-xl font-normal mt-5 cursor-pointer" onClick={() => router.replace('/about')}>Patel Mitenkumar Mukeshbhai</h1>

@@ -43,9 +43,8 @@ export function NavbarDemo() {
       {/* <Image width={50} src={menubar} alt="no-icon" className={`z-20 object-cover  pr-2 md:hidden top-3 fixed right-0`} onClick={toggleMenu}></Image> */}
       {/* <IconMenu className={`z-20 object-cover  pr-2 md:hidden top-2 fixed right-0`} size={50} onClick={toggleMenu}/> */}
       <div onClick={toggleMenu} className="">
-
-      <span className={`h-1 bg-white/80 rounded-xl z-20 pr-2 md:hidden top-7 transition-all  duration-500 fixed right-4 ${isOpen ? '-rotate-45 translate-x-2 translate-y-1 w-8':'rotate-0 w-10'}`}  />
-      <span className={`h-1 bg-white/80 rounded-xl z-20 pr-2 md:hidden top-10 transition-all  duration-500 fixed right-4 ${isOpen ? 'rotate-45 -translate-y-2 translate-x-2 w-8':'rotate-0 w-10'}`} />
+      <span className={`h-1 w-8 bg-white/80 rounded-xl z-20 pr-2 md:hidden top-7 transition-all  duration-500 fixed right-4 ${isOpen ? '-rotate-45 translate-x-2 translate-y-1':'rotate-0'}`}  />
+      <span className={`h-1 w-8 bg-white/80 rounded-xl z-20 pr-2 md:hidden top-10 transition-all  duration-500 fixed right-4 ${isOpen ? 'rotate-45 -translate-y-2 translate-x-2':'rotate-0'}`} />
       </div>
       <div className={`w-full mx-auto flex justify-center items-center fixed md:hidden bottom-0 right-0 h-16 backdrop-blur-3xl rounded-t-2xl z-20 transition-all  duration-300 transform ${isOpen ? "opacity-100 -translate-y-0 " : "opacity-0 translate-y-20"}`}>
         <div className="flex h-5 items-center space-x-4 text-sm justify-center cursor-pointer  ">
