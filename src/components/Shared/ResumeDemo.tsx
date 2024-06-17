@@ -41,7 +41,7 @@ export function ResumeDemo() {
                 <div className="sm:flex block space-y-4 sm:space-y-0 space-x-0 sm:space-x-2 md:space-x-4 cursor-pointer text-xs md:text-sm md:mt-20 mt-10 md:mb-2 mb-5 justify-center items-center ">
                     <Link href="https://maps.app.goo.gl/hxd1M2zPHjEN8g2p9" target="_blank" className="block">Navsari <IconMapPin className="inline mb-0.5" size={16} /></Link >
                     <Separator orientation="vertical" className="hidden lg:flex" />
-                    <Link className="block" href="tel:+91 9510039054" >+91 9510039054 <IconPhone className="inline mb-0.5" size={16} /></Link>
+                    <Link className="block" href="tel:+91 9978956468" >+91 9978956468 <IconPhone className="inline mb-0.5" size={16} /></Link>
                     <Separator orientation="vertical" className="hidden lg:flex" />
                     <Link className="block" href="mailto:mitenpate1234@gmail.com" >mitenpate1234@gmail.com <IconMail className="inline" size={16} /></Link>
                     <Separator orientation="vertical" className="hidden lg:flex" />

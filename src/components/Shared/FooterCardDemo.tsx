@@ -37,7 +37,7 @@ export function FooterCardDemo() {
 
               <div className="flex  flex-col gap-2 justify-center lg:items-start items-center mt-8 lg:mt-0">
                 <h5 className="font-semibold lg:mb-5 mb-2 tracking-widest md:text-md text-sm">Contact Info</h5>
-                <Link className="font-light text-neutral-400 text-sm" href="tel:+91 9510039054" >+91 9510039054</Link>
+                <Link className="font-light text-neutral-400 text-sm" href="tel:+91 9978956468" >+91 9978956468</Link>
                 <Link className="font-light text-neutral-400 text-sm" href="mailto:mitenpate1234@gmail.com" >mitenpate1234@gmail.com</Link>
                 <div className="lg:flex hidden mt-5 gap-8 text-neutral-400">
 
