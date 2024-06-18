@@ -2,13 +2,9 @@
 import { Separator } from "@/components/ui/Separator"
 import Link from "next/link"
 import { useState } from "react";
-import menubar from "../../../public/interface.png"
 import logo from "../../../public/logo-two.png"
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { IconUserCircle, IconScript, IconMessages, IconCode, IconDeviceLaptop, IconMenuDeep } from "@tabler/icons-react";
-import { IconMenu } from "@tabler/icons-react";
-
+import { IconUserCircle, IconScript, IconMessages, IconCode, IconDeviceLaptop} from "@tabler/icons-react";
 
 
 export function NavbarDemo() {

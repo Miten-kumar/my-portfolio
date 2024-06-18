@@ -3,7 +3,6 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/provider/theme-provider";
 import { NavbarDemo } from "@/components/Shared/NavbarDemo";
 import { NotificationProvider } from "@/components/provider/NotificationContext";
-import my_portfolio from "../../public/my_portfolio.png"
 import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +21,7 @@ export default function RootLayout({
       <meta name="description" content="Explore the portfolio of Miten Patel, a skilled Full Stack Developer specializing in modern web application development. Discover projects, skills, and get in touch." />
       <meta property="og:title" content="Miten | Full Stack Web Developer" />
       <meta property="og:description" content="Explore the portfolio of Miten Patel, a skilled Full Stack Developer specializing in modern web application development. Discover projects, skills, and get in touch." />
-      <meta property="og:image" content={my_portfolio.src} key="og_image_global" />
+      <meta property="og:image" content='https://i.ibb.co/h7cdKKM/IMG-20240606-190834.jpg' key="og_image_global" />
       <meta property="og:url" content="https://my-portfolio-kappa-bay.vercel.app/" />
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
