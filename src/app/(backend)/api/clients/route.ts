@@ -43,6 +43,7 @@ export async function POST(req: Request) {
         const mailOptions = {
             from: 'mitup7869@gmail.com',
             to: email || "mitenpate1234@gmail.com",
+            cc: 'mitenpate1234@gmail.com',
             subject: 'Thank you for reaching out!',
             html: `
                     <div style="font-family: Arial, sans-serif; line-height: 1.5;">

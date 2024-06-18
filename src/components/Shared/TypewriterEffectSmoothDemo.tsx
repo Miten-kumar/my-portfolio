@@ -16,11 +16,11 @@ export function TypewriterEffectSmoothDemo() {
       text: "I'm",
     },
     {
-      text: "Patel",
-    },
-    {
       text: "Miten",
       className: "dark:text-portfolio-cyan",
+    },
+    {
+      text: "Patel",
     },
   ];
   return (

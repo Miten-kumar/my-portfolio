@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/components/provider/theme-provider";
 import { NavbarDemo } from "@/components/Shared/NavbarDemo";
 import { NotificationProvider } from "@/components/provider/NotificationContext";
 import my_portfolio from "../../public/my_portfolio.png"
-
+import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -31,6 +31,7 @@ export default function RootLayout({
             {children}
           </NotificationProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
