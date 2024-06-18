@@ -417,7 +417,7 @@ ul {
   }
 
   .width-card {
-    width: 13rem !important;
+    width: 17rem !important;
   }
 }
 
@@ -428,7 +428,7 @@ ul {
 }
 
 .width-card {
-  width: 20rem;
+  width:100%;
 }
 
 .instagram_icon:hover {

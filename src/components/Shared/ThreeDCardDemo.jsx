@@ -10,7 +10,8 @@ export function ThreeDCardDemo() {
   return (
       <CardContainer className="inter-var">
         <CardItem translateZ="100" className=" relative items-center flex justify-center ">
-          <Image src={cardImage} className="-z-10 absolute rounded-xl w-96 mt-20 group-hover/card:shadow-xl -right-4 left-4 text-center " alt="thumbnail" />
+          {/* I have try to set cardimage from top right left when its not work and set using translate */}
+          <Image src={cardImage} className="-z-10 absolute rounded-xl w-96 top-0 translate-y-10 group-hover/card:shadow-xl right-2 left-4 translate-x-2 text-center " alt="thumbnail" />
 
           <Image src={profile_Image} className=" absolute lg:h-full h-72 width-card rounded-xl group-hover/card:shadow-xl " alt="thumbnail" />
         </CardItem>
