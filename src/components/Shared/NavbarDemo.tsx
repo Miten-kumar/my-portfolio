@@ -32,7 +32,7 @@ export function NavbarDemo() {
           <Separator orientation="vertical" />
           <Link className="link" href="/resume">Resume</Link >
           <Separator orientation="vertical" />
-          <Link className="link" href='/contact'>contact</Link >
+          <Link className="link" href='/contact'>Contact</Link >
         </div>
 
       </div>

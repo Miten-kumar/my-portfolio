@@ -418,6 +418,8 @@ ul {
 
   .width-card {
     width: 17rem !important;
+    transform: translateX(-10px) !important;
+
   }
 }
 
