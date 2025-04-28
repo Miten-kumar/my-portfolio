@@ -26,7 +26,7 @@ export function NavbarDemo() {
         <div className="md:flex navbar hidden h-5  space-x-4 text-sm cursor-pointer  mx-14">
           <Link className="link" href='/#Expertise'>Expertise</Link >
           <Separator orientation="vertical" />
-          <Link className="link" href='/#projects'>Work</Link >
+          <Link className="link" href='/experience'>Work</Link >
           <Separator orientation="vertical" />
           <Link className="link" href="/about">About</Link >
           <Separator orientation="vertical" />
@@ -49,7 +49,7 @@ export function NavbarDemo() {
             Skills
           </Link >
           <Separator orientation="vertical" />
-          <Link href='/#projects' className="font-light">
+          <Link href='/experience' className="font-light">
             <IconDeviceLaptop className="mx-auto" />
             Work
           </Link >

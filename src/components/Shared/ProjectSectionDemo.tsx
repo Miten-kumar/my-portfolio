@@ -58,7 +58,7 @@ const dummyContent = [
                 </p>
             </>
         ),
-        badge: "Next Js", content: (<DirectionAwareHover imageUrl={applesso} >
+        badge: "Next Js - 2023", content: (<DirectionAwareHover imageUrl={applesso} >
             <p className="font-bold text-xl">Apple Sso</p>
             <p className="font-normal text-sm">Nextjs / NextAuth</p>
         </DirectionAwareHover>
@@ -87,7 +87,7 @@ const dummyContent = [
                 </p>
             </>
         ),
-        badge: "React js",
+        badge: "React js - 2023",
         content: (<DirectionAwareHover imageUrl={bloggImage} title="Blog_site">
             <p className="font-bold text-xl">CRUD Op. (Sort + search + Filter  )</p>
             <p className="font-normal text-sm">React / Node / MongoDb atlas</p>
@@ -108,7 +108,7 @@ const dummyContent = [
                 </p>
             </>
         ),
-        badge: "Shell & Powershell Scripting",
+        badge: "Shell & Powershell Scripting - 2023",
         content: (
             <DirectionAwareHover imageUrl={dockerImage} >
                 <p className="font-bold text-xl">Base Project (buid + run)</p>
