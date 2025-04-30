@@ -64,12 +64,11 @@ export function AboutUsDemo() {
                 <div className="flex justify-end flex-col text-[15px]">
                     <h2 className="md:text-2xl text-lg">Here's a More About Me</h2>
                     <ul className="opacity-75 ml-0 leading-7">
-                        <li> - I'm 22 years old.</li>
-                        <li> - I have over <b className="opacity-1000"> 1.6 years of experience </b>in full-stack development.</li>
+                        <li> - I'm 24 years old.</li>
+                        <li> - I have over <b className="opacity-1000"> 2.5 years of experience </b>in full-stack development.</li>
                         <li> - I recently completed my Bachelor's in <i>Information Technology Engineering</i> with a CGPA of <b>8.56</b> in 2023.</li>
                         <li> - I am currently working at <b>Aspire SoftServ pvt ltd.</b> in Ahmedabad.</li>
-                        <li> - I'm currently working on this project <IconArrowRight className="inline w-4" /> <Link target="_blank" href="https://qa.liquidox.com" className="underline">qa.liquidox.com</Link>.</li>
-                        <li> - we have use these technologies Next.js, GraphQL, Strapi, Postman, TypeScript, and Tailwind CSS.</li>
+                        <li> - we have use these technologies React, Next.js,Nest Js, auth0, redux, TypeScript, and some design tools.</li>
                     </ul>
                 </div>
             </div>

@@ -14,13 +14,13 @@ export function ResumeDemo() {
         e.preventDefault(); // Prevent default button behavior
         console.log('Download button clicked');
         try {
-            const response = await fetch('/miten_resume.pdf');
+            const response = await fetch('/Miten_Resume.pdf');
             console.log('File fetched successfully');
             const blob = await response.blob();
             const url = window.URL.createObjectURL(blob);
             const link = document.createElement('a');
             link.href = url;
-            link.setAttribute('download', 'miten_resume.pdf');
+            link.setAttribute('download', 'Miten_Resume.pdf');
             router.push('/resume')
             document.body.appendChild(link);
             link.click();
@@ -92,10 +92,7 @@ export function ResumeDemo() {
                                 <span className="block mt-1 md:text-sm text-xs mx-5"> ( 1 year )</span>
                             </Link>
                             <div className="inline mt-5 ml-4 md:mr-0">
-                                After May 2023
-                                <div className="h-1 w-1 rounded-full bg-white mr-0.5 animate-bounce transition-all delay-1000 inline-flex" />
-                                <div className="h-1 w-1 rounded-full bg-white animate-bounce transition-all delay-100 inline-flex mr-0.5" />
-                                <div className="h-1 w-1 rounded-full bg-white animate-bounce delay-300 transition-all inline-flex mr-0.5" />
+                                2023 -2024
                             </div>
                         </div>
                         <ul className="mr-4 md:mt-8 mt-4 space-y-3 leading-5">
@@ -106,7 +103,31 @@ export function ResumeDemo() {
                             <li> - I've also contributed to implementing authentication flows including Apple and Google SSO.</li>
                         </ul>
                     </div>
-
+                    <div className="flex my-14 flex-col">
+                        {/* <h6 className="text-sm md:text-base font-semibold mb-2">2024 – 2025</h6> */}
+                        <div className="md:flex grid grid-cols-1 justify-between items-start text-xs md:text-sm">
+                            <span className="inline">
+                                {`4) Supplier Performance Management (SPM) System - Aspire SoftServ Pvt Ltd.`}
+                                <span className="block mt-1 md:text-sm text-xs mx-5">(1 Year)</span>
+                            </span>
+                            {/* <div className="inline mt-5 ml-4 md:mr-0">2024 – 2025</div> */}
+                            <div className="inline mt-5 ml-4 md:mr-0">
+                                2024 - 2025
+                                <div className="h-1 w-1 rounded-full bg-white mr-0.5 animate-bounce transition-all delay-1000 inline-flex" />
+                                <div className="h-1 w-1 rounded-full bg-white animate-bounce transition-all delay-100 inline-flex mr-0.5" />
+                                <div className="h-1 w-1 rounded-full bg-white animate-bounce delay-300 transition-all inline-flex mr-0.5" />
+                            </div>
+                        </div>
+                        <ul className="mr-4 md:mt-8 mt-4 space-y-3 leading-5">
+                            <li>- Working on a Supplier Performance Management (SPM) / Supply Chain Management system.</li>
+                            <li>- Tech stack: React, NestJS, MUI for UI components, Redux & MongoDB for state and data handling.</li>
+                            <li>- Authentication handled via Auth0; CI/CD and deployment managed through Google Cloud Platform (GCP).</li>
+                            <li>- Collaborative tools used: Jira for task tracking and Slack for team communication.</li>
+                            <li>- Responsibilities include resolving bugs, implementing scalable and responsive designs, and building new features based on business requirements.</li>
+                            <li>- Hands-on experience with frontend integration, backend development, and third-party tool integration.</li>
+                            <li>- Actively involved in Git/GitHub workflows for version control and team collaboration.</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <hr className="my-10 w-11/12  " />
@@ -166,6 +187,7 @@ export function ResumeDemo() {
                     <ul className="flex  md:mt-10 md:mb-0 m-0 p-0  mt-5 flex-col">
                         <li className="inline leading-5">3) Back-end frameworks</li>
 
+                        <li>-Nest</li>
                         <li>- Node</li>
                         <li>- Express</li>
                         <li>- Strapi</li>

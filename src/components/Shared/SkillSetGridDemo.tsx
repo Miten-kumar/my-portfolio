@@ -20,7 +20,7 @@ import postgress from "../../../public/postgress.png"
 import git from "../../../public/git.png"
 import github from "../../../public/github_contect.png"
 import docker from "../../../public/docker.png"
-import strapi from "../../../public/stapiVector.png"
+import nestjs from "../../../public/Nest_js.png"
 import typescript from "../../../public/typescript.png"
 import postman from "../../../public/postman.png"
 export function SkillSetGridDemo() {
@@ -98,8 +98,8 @@ const items = [
                     <p className="text-xs">Express</p>
                 </div>
                 <div className="text-center space-y-2">
-                    <Image src={strapi} alt="Strapi" className="delay-300 lg:w-18 w-14 md:w-12" />
-                    <p className="text-xs">Strapi</p>
+                    <Image src={nestjs} alt="nestjs" className="delay-300 lg:w-18 w-14 md:w-12" />
+                    <p className="text-xs">Nest Js</p>
                 </div>
             </div>
 
