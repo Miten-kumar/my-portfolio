@@ -115,7 +115,7 @@ export function TimelineDemo() {
         In early 2023, during the training phase, I learned <strong>React</strong>, <strong>Node.js (Express)</strong>, <strong>Docker basics</strong>, and <strong>Shell scripting</strong>. Built a small blog application as a hands-on project.
       </p>
       <ul className="mb-8 list-disc pl-5 text-sm font-normal text-neutral-800 md:text-base dark:text-neutral-200 leading-relaxed tracking-wide space-y-2">
-        <li>Created a blog application to apply my learnings</li>
+        <li>Created  blog application to apply my learnings</li>
         <li>Explored Docker containers and shell script automation</li>
       </ul>
     </div>
